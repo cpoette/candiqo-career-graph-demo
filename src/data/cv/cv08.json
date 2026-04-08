@@ -1,0 +1,618 @@
+{
+  "id": "cv08",
+  "label": "Senior Software Engineer",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Ingénieur R&D / Lead Tech",
+        "company_name": "Indy",
+        "location_raw": "Lyon",
+        "date_start": "2018",
+        "date_end": "2023",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 8,
+            "line_end": 15
+          }
+        ],
+        "excerpt": "Ingénieur R&D / lead tech chez Indy, Lyon ([URL])\n\"La comptabilité des indépendants tout simplement\"\nPremier développeur sur deux lancements de produits, en autonomie dès\nla phase de conception, en duo avec le Product Manager\nGestion d'équipe, mentoring, 1-1s réguliers\nGarant de la qualité des livrables de mon équipe\nParticipation au recrutement, mener les entretiens techniques\nSujets RH: Gestion de changements d'équipe, grille de salaire, etc."
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 6,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "69123",
+        "zip_code": "69000",
+        "city_name": "LYON",
+        "dept_code": "69",
+        "region_name": "AUVERGNE-RHONE-ALPES",
+        "lat": "45.76400000",
+        "lon": "4.83570000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "820648830",
+        "name": "INDY.FR",
+        "sigle": null,
+        "naf": "58.29C",
+        "naf25": "58.29Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "31",
+          "min": 200,
+          "max": 249,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "69006",
+          "city": "LYON",
+          "dept": "69",
+          "region": "84",
+          "lat": "45.764429",
+          "lon": "4.85501"
+        },
+        "matched_establishment": {
+          "siret": "82064883000041",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "58.29C",
+          "activite_principale_naf25": "58.29Y",
+          "tranche_effectif_salarie": {
+            "code": "31",
+            "label": "200-249",
+            "min": 200,
+            "max": 249,
+            "midpoint": 225,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "94 RUE ROBERT 69006 LYON",
+          "zip": "69006",
+          "city": "LYON",
+          "insee": "69386",
+          "dept": "69",
+          "region": "84",
+          "lat": "45.764429",
+          "lon": "4.85501",
+          "date_creation": "2020-11-18",
+          "date_debut_activite": "2020-11-18",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2016,
+          "ca": 40081,
+          "resultat_net": 24777
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "58",
+            "label": "Édition"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 200,
+              "max": 249
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD04",
+            "label": "Ressources humaines",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD06",
+            "label": "Média, édition & contenu",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.6000000000000001,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Ingénieur / Consultant",
+        "company_name": "OCTO Technology",
+        "location_raw": "Sydney, Australie",
+        "date_start": "2015",
+        "date_end": "2018",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 16,
+            "line_end": 21
+          }
+        ],
+        "excerpt": "Ingénieur / consultant chez OCTO Technology, Sydney, Australie\nLead frontend sur une application de gestion de données liées à la santé.\nCréation d'une web app mobile-first d'aide au choix d'une assurance\nfamille. En duo avec la Product-owner, forte vélocité, tests réguliers avec\ndes utilisateurs\nCréation d'une solution d'API Gateway pour le compte d'une grande"
+      },
+      "recency": {
+        "asof_year": 2018,
+        "age_years": 8,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "418166096",
+        "name": "OCTO-TECHNOLOGY",
+        "sigle": null,
+        "naf": "62.02A",
+        "naf25": "62.20G",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "41",
+          "min": 500,
+          "max": 999,
+          "segment": "ETI"
+        },
+        "hq": {
+          "zip": "75002",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.868662",
+          "lon": "2.333382"
+        },
+        "matched_establishment": {
+          "siret": "41816609600069",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "62.02A",
+          "activite_principale_naf25": "62.20G",
+          "tranche_effectif_salarie": {
+            "code": "41",
+            "label": "500-999",
+            "min": 500,
+            "max": 999,
+            "midpoint": 750,
+            "segment": "ETI"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "34 AVENUE DE L'OPERA 75002 PARIS",
+          "zip": "75002",
+          "city": "PARIS",
+          "insee": "75102",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.868662",
+          "lon": "2.333382",
+          "date_creation": "2016-11-28",
+          "date_debut_activite": "2016-11-28",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2016,
+          "ca": 47276000,
+          "resultat_net": 0
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "ETI",
+            "employees": {
+              "min": 500,
+              "max": 999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.30000000000000004,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Ingénieur / Consultant",
+        "company_name": "Zenika",
+        "location_raw": "Lyon",
+        "date_start": "2014",
+        "date_end": "2015",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 22,
+            "line_end": 25
+          }
+        ],
+        "excerpt": "compagnie aérienne. Petite équipe, solution basée sur 3scale / nginx,\ndéployée sur un cloud AWS\nIngénieur / consultant chez Zenika, Lyon\nDéveloppement d'une application de gestion d'actes notariés"
+      },
+      "recency": {
+        "asof_year": 2015,
+        "age_years": 11,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "69123",
+        "zip_code": "69000",
+        "city_name": "LYON",
+        "dept_code": "69",
+        "region_name": "AUVERGNE-RHONE-ALPES",
+        "lat": "45.76400000",
+        "lon": "4.83570000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "489682005",
+        "name": "ZENIKA",
+        "sigle": null,
+        "naf": "62.02A",
+        "naf25": "62.20G",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "32",
+          "min": 250,
+          "max": 499,
+          "segment": "ETI"
+        },
+        "hq": {
+          "zip": "75009",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.876185",
+          "lon": "2.333661"
+        },
+        "matched_establishment": {
+          "siret": "48968200500058",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "62.02A",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "94 RUE SERVIENT 69003 LYON",
+          "zip": "69003",
+          "city": "LYON",
+          "insee": "69383",
+          "dept": "69",
+          "region": "84",
+          "lat": "45.760459",
+          "lon": "4.850895",
+          "date_creation": "2013-04-01",
+          "date_debut_activite": "2014-10-22",
+          "date_fermeture": "2014-10-22"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2016,
+          "ca": 21923586,
+          "resultat_net": 1399914
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "ETI",
+            "employees": {
+              "min": 250,
+              "max": 499
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Ingénieur Logiciel",
+        "company_name": "SQLI",
+        "location_raw": "Lyon",
+        "date_start": "2012",
+        "date_end": "2014",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 26,
+            "line_end": 30
+          }
+        ],
+        "excerpt": "Lead frontend sur une application d'assurance à destination des\nagriculteurs / éleveurs. (équipe de 6 développeurs)\n(Java 1.7, Spring Boot, Hibernate, MySQL, ElasticSearch, AngularJS)\nIngénieur logiciel chez SQLI, Lyon\nProjet au forfait pour un client grand compte du secteur de l'assurance >"
+      },
+      "recency": {
+        "asof_year": 2014,
+        "age_years": 12,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "69123",
+        "zip_code": "69000",
+        "city_name": "LYON",
+        "dept_code": "69",
+        "region_name": "AUVERGNE-RHONE-ALPES",
+        "lat": "45.76400000",
+        "lon": "4.83570000"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "temporal_mismatch",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD25",
+            "label": "Formation & Transmission",
+            "score": 0.5,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.75,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1196 @@
+{
+  "id": "cv10",
+  "label": "CPTO & Product Builder - PDF",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "CPTO & Product Builder",
+        "company_name": "Candiqo",
+        "location_raw": "Lesquin (59)",
+        "date_start": "juil. 2025",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 5
+          }
+        ],
+        "excerpt": "CPTO & Product Builder\nCandiqo - Projet R&D / IA (personnel) | Lesquin (59) | depuis juil. 2025\n- Produit IA Privacy-first d'aide à la décision dans la recherche d'emploi\n- Reconstruction de parcours à partir de CV PDF/Word non structurés\n- Matching compétences x poste réel x aspirations avec scoring explicable, non prédictif\n- Architecture fullstack & pipelines LLM hybrides - self-hosted & API"
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59343",
+        "zip_code": "59810",
+        "city_name": "LESQUIN",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.58922857",
+        "lon": "3.11191935"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0.45,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Head of Product & Technology - COMEX",
+        "company_name": "Cerise Media (Prisma Media / Vivendi)",
+        "location_raw": "Marcq-En-Baroeul (59) / Gennevilliers (92)",
+        "date_start": "juin 2018",
+        "date_end": "oct. 2024",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 15
+          }
+        ],
+        "excerpt": "Head of Product & Technology - COMEX\nCerise Media (Prisma Media / Vivendi) | Marcq-En-Baroeul (59) / Gennevilliers (92) | juin 2018 - oct. 2024\n- Management de 20-30 collaborateurs (Product, UX, Dev, Infra, SecOps)\n- Définition et pilotage de la stratégie produit (Media, AdTech, SaaS, IA, monétisation)\nImpacts clés:\n- Pilotage d'une stratégie de résilience globale (infra, orga, knowledge) → -95 % d'incidents majeurs\n- Transformation agile → +100% de vélocité\n- Modernisation de plateformes critiques (monolithe → microservices / API) → réduction de la dette\ntechnique et amélioration de la maintenabilité\n- Plateforme SaaS Affiliation à grande échelle (20M+ références produits) → +1,2 M€ de revenus (an 1)\n- SaaS WebPush à très grande échelle (18M+ opt-in, 3,8Md Notifications / 9 mois) → +20 % de trafic\n- Pilotage en mode turnaround d'une BU B2B en difficulté (P&L, coûts, management) → marge > 50 %"
+      },
+      "recency": {
+        "asof_year": 2024,
+        "age_years": 2,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 7,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59378",
+        "zip_code": "59700",
+        "city_name": "MARCQ-EN-BAROEUL",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.67533486",
+        "lon": "3.10093584"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "507388155",
+        "name": "CERISE MEDIA",
+        "sigle": null,
+        "naf": "62.01Z",
+        "naf25": "62.10Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "92230",
+          "city": "GENNEVILLIERS",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.919289",
+          "lon": "2.297645"
+        },
+        "matched_establishment": {
+          "siret": "50738815500057",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "62.01Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "11",
+            "label": "10-19",
+            "min": 10,
+            "max": 19,
+            "midpoint": 15,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "165 AVENUE DE LA MARNE 59700 MARCQ-EN-BARŒUL",
+          "zip": "59700",
+          "city": "MARCQ-EN-BARŒUL",
+          "insee": "59378",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.680195",
+          "lon": "3.114238",
+          "date_creation": "2022-12-01",
+          "date_debut_activite": "2025-04-01",
+          "date_fermeture": "2025-04-01"
+        },
+        "group_hints": ["Prisma Media", "Vivendi"],
+        "finance": {
+          "year": 2024,
+          "ca": 9682420,
+          "resultat_net": -628409
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "group",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "GE",
+            "reason": "declared_GE_and_group_hints_present",
+            "confidence": 0.75
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": true,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD01",
+            "label": "Direction & Stratégie",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD18",
+            "label": "Opérations & Exploitation",
+            "score": 0.8,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.55,
+          "managerial_scope": 1,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 1,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Directeur du Digital",
+        "company_name": "Altavia",
+        "location_raw": "Lille (59)",
+        "date_start": "2015",
+        "date_end": "2017",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "Directeur du Digital\nAltavia | Lille (59) | 2015 - 2017\n- Management du pôle digital (UX, Chefs de projets, Dev, Offshore), Budgets, R&D, avant-ventes\n- Solutions Martech / CRM → génération de leads\n- SaaS de gestion / suivi de production digital & print → optimisation coût & process"
+      },
+      "recency": {
+        "asof_year": 2017,
+        "age_years": 9,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "334862901",
+        "name": "ALTAVIA LILLE",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": null,
+        "section_naf": "M",
+        "etat_administratif": "C",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "59000",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634951",
+          "lon": "3.069529"
+        },
+        "matched_establishment": {
+          "siret": "33486290100025",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "23 RUE DU MOLINEL - LILLE 59000 LILLE",
+          "zip": "59000",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.635085",
+          "lon": "3.069789",
+          "date_creation": "1989-08-11",
+          "date_debut_activite": "2016-09-30",
+          "date_fermeture": "2016-09-30"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2021,
+          "ca": 9221365,
+          "resultat_net": -596110
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": true,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD01",
+            "label": "Direction & Stratégie",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.8,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0.65,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Consultant Web & Mobile",
+        "company_name": "Freelance",
+        "location_raw": "Lille (59)",
+        "date_start": "2011",
+        "date_end": "2015",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Consultant Web & Mobile\nFreelance | Lille (59) | 2011 - 2015\n- Product discovery & delivery"
+      },
+      "recency": {
+        "asof_year": 2015,
+        "age_years": 11,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 5,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "freelance",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.8,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "Responsable Rich Experience",
+        "company_name": "altima°",
+        "location_raw": "Roubaix (59)",
+        "date_start": "2008",
+        "date_end": "2011",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Responsable Rich Experience\naltima° | Roubaix (59) | 2008 - 2011\n- Management équipe Creative Development"
+      },
+      "recency": {
+        "asof_year": 2011,
+        "age_years": 15,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59512",
+        "zip_code": "59100",
+        "city_name": "ROUBAIX",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.68797748",
+        "lon": "3.18258435"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "411780687",
+        "name": "ALTIMA",
+        "sigle": null,
+        "naf": "62.02A",
+        "naf25": null,
+        "section_naf": "J",
+        "etat_administratif": "C",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "59491",
+          "city": "VILLENEUVE D'ASCQ",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.648902",
+          "lon": "3.128557"
+        },
+        "matched_establishment": {
+          "siret": "41178068700041",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "62.01Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "2 BD DU GENERAL LECLERC 59100 ROUBAIX",
+          "zip": "59100",
+          "city": "ROUBAIX",
+          "insee": "59512",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.687635",
+          "lon": "3.175323",
+          "date_creation": "2007-09-28",
+          "date_debut_activite": "2010-04-07",
+          "date_fermeture": "2010-04-07"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2019,
+          "ca": 26308298,
+          "resultat_net": 5251419
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD13",
+            "label": "Design & UX",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.55,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "6": {
+      "identity": {
+        "job_title": "Chef de projet Technique Web",
+        "company_name": "Altavia",
+        "location_raw": "Lille (59)",
+        "date_start": "2005",
+        "date_end": "2008",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_6",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Chef de projet Technique Web\nAltavia | Lille (59) | 2005 - 2008\n- Management Front & Back"
+      },
+      "recency": {
+        "asof_year": 2008,
+        "age_years": 18,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "334862901",
+        "name": "ALTAVIA LILLE",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": null,
+        "section_naf": "M",
+        "etat_administratif": "C",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "59000",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634951",
+          "lon": "3.069529"
+        },
+        "matched_establishment": {
+          "siret": "33486290100025",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "23 RUE DU MOLINEL - LILLE 59000 LILLE",
+          "zip": "59000",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.635085",
+          "lon": "3.069789",
+          "date_creation": "1989-08-11",
+          "date_debut_activite": "2016-09-30",
+          "date_fermeture": "2016-09-30"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2021,
+          "ca": 9221365,
+          "resultat_net": -596110
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.55,
+          "managerial_scope": 0.55,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "7": {
+      "identity": {
+        "job_title": "Développeur Web",
+        "company_name": "Mediagong",
+        "location_raw": "Vitry-Sur-Seine (94)",
+        "date_start": "2003",
+        "date_end": "2005",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_7",
+            "line_start": 0,
+            "line_end": 1
+          }
+        ],
+        "excerpt": "Développeur Web\nMediagong | Vitry-Sur-Seine (94) | 2003 - 2005"
+      },
+      "recency": {
+        "asof_year": 2005,
+        "age_years": 21,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "94081",
+        "zip_code": "94400",
+        "city_name": "VITRY-SUR-SEINE",
+        "dept_code": "94",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.78828283",
+        "lon": "2.39412681"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "443581921",
+        "name": "MEDIAGONG",
+        "sigle": null,
+        "naf": "62.02A",
+        "naf25": null,
+        "section_naf": "J",
+        "etat_administratif": "C",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "92150",
+          "city": "SURESNES",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.874124",
+          "lon": "2.234069"
+        },
+        "matched_establishment": {
+          "siret": "44358192100022",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "72.1Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "40 A 62 40 RUE DU GEN MALLERET JOINVILLE 94400 VITRY-SUR-SEINE",
+          "zip": "94400",
+          "city": "VITRY-SUR-SEINE",
+          "insee": "94081",
+          "dept": "94",
+          "region": "11",
+          "lat": "48.776153",
+          "lon": "2.406525",
+          "date_creation": "2003-11-27",
+          "date_debut_activite": "2006-10-15",
+          "date_fermeture": "2006-10-15"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2016,
+          "ca": 1486550,
+          "resultat_net": 4224
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "8": {
+      "identity": {
+        "job_title": "Développeur Web - alternance",
+        "company_name": "Multilignes Conseil / TelePerformance",
+        "location_raw": "Paris 15 (75)",
+        "date_start": "2001",
+        "date_end": "2003",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_8",
+            "line_start": 0,
+            "line_end": 1
+          }
+        ],
+        "excerpt": "Développeur Web - alternance\nMultilignes Conseil / TelePerformance | Paris 15 (75) | 2001 - 2003"
+      },
+      "recency": {
+        "asof_year": 2003,
+        "age_years": 23,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75115",
+        "zip_code": "75015",
+        "city_name": "PARIS-15E-ARRONDISSEMENT",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.84015542",
+        "lon": "2.29355937"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "327851077",
+        "name": "MULTILIGNES CONSEIL",
+        "sigle": null,
+        "naf": "74.8H",
+        "naf25": null,
+        "section_naf": "M",
+        "etat_administratif": "C",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "75015",
+          "city": "PARIS 15",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.838067",
+          "lon": "2.28408"
+        },
+        "matched_establishment": {
+          "siret": "32785107700054",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "74.8H",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "6 VLA THORETON 75015 PARIS 15",
+          "zip": "75015",
+          "city": "PARIS 15",
+          "insee": "75115",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.838067",
+          "lon": "2.28408",
+          "date_creation": "1999-08-01",
+          "date_debut_activite": "2004-12-15",
+          "date_fermeture": "2004-12-15"
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "74",
+            "label": "Autres activités spécialisées, scientifiques et techniques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    }
+  }
+}

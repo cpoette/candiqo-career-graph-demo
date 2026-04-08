@@ -1,0 +1,988 @@
+{
+  "id": "cv22",
+  "label": "Tech Lead Backend",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Tech Lead Back-end",
+        "company_name": "Cerise Media",
+        "location_raw": "Marcq-en-Baroeul",
+        "date_start": "Nov. 2023",
+        "date_end": "Mars 2025",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 1
+          },
+          {
+            "candidate_id": "cand_1",
+            "line_start": 2,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Tech Lead Back-end Cerise Media Nov. 2023 - Mars 2025 Marcq-en-Baroeul\nAccompagnement d'une équipe de 5 développeurs back-end avec structuration des pratiques (ADR, Docusaurus, GitHub Flow). Réduction de la dette technique et optimisation des performances (MongoDB, Sentry). Projet Content to Commerce destiné à Prisma Media et Cerise Media: catalogue de 20M+ produits, Elasticsearch, microservices REST avec CQRS/event sourcing (Kafka, NestJS)."
+      },
+      "recency": {
+        "asof_year": 2025,
+        "age_years": 1,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59378",
+        "zip_code": "59700",
+        "city_name": "MARCQ-EN-BAROEUL",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.67533486",
+        "lon": "3.10093584"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "507388155",
+        "name": "CERISE MEDIA",
+        "sigle": null,
+        "naf": "62.01Z",
+        "naf25": "62.10Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "92230",
+          "city": "GENNEVILLIERS",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.919289",
+          "lon": "2.297645"
+        },
+        "matched_establishment": {
+          "siret": "50738815500057",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "62.01Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "11",
+            "label": "10-19",
+            "min": 10,
+            "max": 19,
+            "midpoint": 15,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "165 AVENUE DE LA MARNE 59700 MARCQ-EN-BARŒUL",
+          "zip": "59700",
+          "city": "MARCQ-EN-BARŒUL",
+          "insee": "59378",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.680195",
+          "lon": "3.114238",
+          "date_creation": "2022-12-01",
+          "date_debut_activite": "2025-04-01",
+          "date_fermeture": "2025-04-01"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 9682420,
+          "resultat_net": -628409
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.8,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0.15,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Développeur Back-end / Tech Lead Back-end",
+        "company_name": "Cerise Media",
+        "location_raw": "Marcq-en-Baroeul",
+        "date_start": "Mai 2022",
+        "date_end": "Oct. 2023",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Développeur Back-end Tech Lead Back-end\nMai 2022 - Oct. 2023 Marcq-en-Baroeul\nMission chez Cerise Media - voir expérience ci-dessus."
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59378",
+        "zip_code": "59700",
+        "city_name": "MARCQ-EN-BAROEUL",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.67533486",
+        "lon": "3.10093584"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "507388155",
+        "name": "CERISE MEDIA",
+        "sigle": null,
+        "naf": "62.01Z",
+        "naf25": "62.10Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "92230",
+          "city": "GENNEVILLIERS",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.919289",
+          "lon": "2.297645"
+        },
+        "matched_establishment": {
+          "siret": "50738815500057",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "62.01Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "11",
+            "label": "10-19",
+            "min": 10,
+            "max": 19,
+            "midpoint": 15,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "165 AVENUE DE LA MARNE 59700 MARCQ-EN-BARŒUL",
+          "zip": "59700",
+          "city": "MARCQ-EN-BARŒUL",
+          "insee": "59378",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.680195",
+          "lon": "3.114238",
+          "date_creation": "2022-12-01",
+          "date_debut_activite": "2025-04-01",
+          "date_fermeture": "2025-04-01"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 9682420,
+          "resultat_net": -628409
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.65,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.8,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0.15,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Développeur Back-end",
+        "company_name": "MeilleurTaux",
+        "location_raw": "Lille",
+        "date_start": "Nov. 2021",
+        "date_end": "Mars 2022",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Développeur Back-end MeilleurTaux Nov. 2021 - Mars 2022 Lille\nMaintenance applicative et réusinage du code back-end PHP. Mise en place de tests unitaires (PHPUnit)."
+      },
+      "recency": {
+        "asof_year": 2022,
+        "age_years": 4,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "524690575",
+        "name": "MEILLEURTAUX ASSURANCES",
+        "sigle": null,
+        "naf": "66.22Z",
+        "naf25": null,
+        "section_naf": "K",
+        "etat_administratif": "C",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "12",
+          "min": 20,
+          "max": 49,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "59800",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.635625",
+          "lon": "3.062476"
+        },
+        "matched_establishment": {
+          "siret": "52469057500021",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "66.22Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "16 RUE DE TOURNAI 59800 LILLE",
+          "zip": "59800",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.635051",
+          "lon": "3.071605",
+          "date_creation": "2013-02-25",
+          "date_debut_activite": "2022-02-28",
+          "date_fermeture": "2022-02-28"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2021,
+          "ca": 16823485,
+          "resultat_net": 1358637
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "K",
+            "label": "Activités financières et d'assurance"
+          },
+          "division": {
+            "code": "66",
+            "label": "Activités auxiliaires de services financiers et d'assurance"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 20,
+              "max": 49
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD03",
+            "label": "Banque, assurance & finance",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.05,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Porteur de projet",
+        "company_name": "EuraTechnologies",
+        "location_raw": "Roubaix",
+        "date_start": "Sept. 2020",
+        "date_end": "Sept. 2021",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Porteur de projet EuraTechnologies Sept. 2020 - Sept. 2021 Roubaix\nIncubation chez EuraTechnologies d'une plateforme communautaire et marketplace d'objets de collection. Veille concurrentielle et étude de marché, définition du MVP et business plan, faisabilité technique, prototypage UX/UI et communication auprès des mentors.\nFreelance Avr. 2019 - Sept. 2021"
+      },
+      "recency": {
+        "asof_year": 2021,
+        "age_years": 5,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59512",
+        "zip_code": "59100",
+        "city_name": "ROUBAIX",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.68797748",
+        "lon": "3.18258435"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "place_like",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0.65,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "Développeur Full-stack",
+        "company_name": "Enedis",
+        "location_raw": "Lille",
+        "date_start": "Sept. 2015",
+        "date_end": "Mai 2019",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 0,
+            "line_end": 3
+          }
+        ],
+        "excerpt": "Développeur Full-stack Enedis Sept. 2015 - Mai 2019 Lille\nDéveloppement d'applications web au sein du CEN de Lille. Projets principaux: e-DT (cartographie interactive OpenLayers/PostGIS des demandes de travaux), QualiProg et Plan de Charge (suivi et planification des interventions). Gestion de bases de données, rédaction de documentation, formation des équipes opérationnelles."
+      },
+      "recency": {
+        "asof_year": 2019,
+        "age_years": 7,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 5,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "444608442",
+        "name": "ENEDIS",
+        "sigle": null,
+        "naf": "35.13Z",
+        "naf25": "35.14Y",
+        "section_naf": "D",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "53",
+          "min": 10000,
+          "max": null,
+          "segment": "GE"
+        },
+        "hq": {
+          "zip": "92800",
+          "city": "PUTEAUX",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.888749",
+          "lon": "2.242434"
+        },
+        "matched_establishment": {
+          "siret": "44460844210462",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "35.13Z",
+          "activite_principale_naf25": "35.14Y",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "42 RUE CHARLES DE MUYSSART 59800 LILLE",
+          "zip": "59800",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.632355",
+          "lon": "3.037614",
+          "date_creation": "2007-11-01",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 16912000000,
+          "resultat_net": 661000000
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "D",
+            "label": "Production et distribution d'énergie"
+          },
+          "division": {
+            "code": "35",
+            "label": "Production et distribution d'électricité, de gaz, de vapeur et d'air conditionné"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "GE",
+            "employees": {
+              "min": 10000,
+              "max": null
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "GE",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD25",
+            "label": "Formation & Transmission",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD11",
+            "label": "Énergie & environnement",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.15,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "6": {
+      "identity": {
+        "job_title": "Développeur Full-stack",
+        "company_name": "Roll-Gom",
+        "location_raw": "Tilloy-les-Mofflaines",
+        "date_start": "Sept. 2013",
+        "date_end": "Juin 2015",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_6",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Développeur Full-stack Roll-Gom Sept. 2013 - Juin 2015 Tilloy-les-Mofflaines\nDéveloppement du site internet et d'un intranet (projet de fin d'études) pour le suivi opérationnel. Support technique.\n[URL]"
+      },
+      "recency": {
+        "asof_year": 2015,
+        "age_years": 11,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "62817",
+        "zip_code": "62217",
+        "city_name": "TILLOY-LES-MOFFLAINES",
+        "dept_code": "62",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.27728258",
+        "lon": "2.82150382"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "453192973",
+        "name": "ROLL-GOM",
+        "sigle": null,
+        "naf": "22.19Z",
+        "naf25": "22.12Y",
+        "section_naf": "C",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "62217",
+          "city": "TILLOY-LES-MOFFLAINES",
+          "dept": "62",
+          "region": "32",
+          "lat": "50.292765",
+          "lon": "2.813842"
+        },
+        "matched_establishment": {
+          "siret": "45319297300023",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "22.19Z",
+          "activite_principale_naf25": "22.12Y",
+          "tranche_effectif_salarie": {
+            "code": "21",
+            "label": "50-99",
+            "min": 50,
+            "max": 99,
+            "midpoint": 75,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "ZI EST RUE RENE LAENNEC 62217 TILLOY-LES-MOFFLAINES",
+          "zip": "62217",
+          "city": "TILLOY-LES-MOFFLAINES",
+          "insee": "62817",
+          "dept": "62",
+          "region": "32",
+          "lat": "50.292765",
+          "lon": "2.813842",
+          "date_creation": "2004-05-13",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "C",
+            "label": "Industrie manufacturière"
+          },
+          "division": {
+            "code": "22",
+            "label": "Fabrication de produits en caoutchouc et en plastique"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD10",
+            "label": "Industrie",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.05,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    }
+  }
+}

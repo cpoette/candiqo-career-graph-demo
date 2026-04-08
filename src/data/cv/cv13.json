@@ -1,0 +1,332 @@
+{
+  "id": "cv13",
+  "label": "Ingénieur Data",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Consultant en Données",
+        "company_name": "CGI",
+        "location_raw": null,
+        "date_start": "Juin 2021",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 13
+          }
+        ],
+        "excerpt": "CGI | Consultant en Données | Juin 2021 - Présent\n_Chanel - Application de Traitement de Données Workday | Janvier 2023 - Présent_\n- Architecturé et développé une application complète d'ingestion de données Workday pour\nl'analyse Power BI\n- Conçu des pipelines de données scalables utilisant Databricks et Azure Data Factory avec\ndes notebooks PySpark\n- Implémenté l'architecture médaillon (couches Bronze/Silver/Gold) pour un traitement\noptimisé et l'assurance qualité\n- Géré l'infrastructure cloud via Azure DevOps et Storage Explorer pour des opérations de\ndonnées fluides\n- Livré des analyses SQL pour la validation des données et les besoins métier ad-hoc\n- Collaboré étroitement avec les parties prenantes pour garantir que les solutions répondent\naux objectifs métier\n1"
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 6,
+        "weight": 1
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "ambiguous_no_geo",
+        "group_hints": [],
+        "best_guess": {
+          "siren": "702042755",
+          "name": "CGI FRANCE",
+          "score": 0.9,
+          "reason": "largest_company_recent_xp",
+          "confidence": 0.35
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD16",
+            "label": "Infrastructure & Cloud",
+            "score": 0.85,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 1,
+          "managerial_scope": 0.2,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0.15,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Application de Gestion de Projets",
+        "company_name": "LVMH",
+        "location_raw": null,
+        "date_start": "Juin 2021",
+        "date_end": "Décembre 2022",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 14,
+            "line_end": 21
+          }
+        ],
+        "excerpt": "- Technologies: Python, PySpark, SQL, Azure Synapse, Azure Data Factory, Databricks,\nPower BI\n_LVMH - Application de Gestion de Projets | Juin 2021 - Décembre 2022_\n- Maintenu et amélioré la plateforme web de gestion de projets durant la période d'alternance\n- Livré des corrections de bugs et améliorations utilisant HTML, CSS, PHP et JavaScript\n- Géré les opérations de base de données locales avec MySQL pour l'intégrité et la performance des données\n- Coordonné avec les chefs de projet et équipes de développement via la gestion partagée\ndu backlog"
+      },
+      "recency": {
+        "asof_year": 2022,
+        "age_years": 4,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "ambiguous_no_geo",
+        "group_hints": [],
+        "best_guess": {
+          "siren": "572082253",
+          "name": "LVMH FRAGRANCE BRANDS",
+          "score": 0.9,
+          "reason": "largest_company_recent_xp",
+          "confidence": 0.35
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.8,
+            "confidence": "medium"
+          },
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Préparation en Analyse de Données",
+        "company_name": "Auticonsult",
+        "location_raw": null,
+        "date_start": "Décembre 2019",
+        "date_end": "Décembre 2020",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "Auticonsult | Préparation en Analyse de Données | Décembre 2019 - Décembre\n2020\n- Complété une évaluation complète incluant tests cognitifs et évaluations de programmation Python\n- Préparé une mission d'analyse Splunk avec un client de l'industrie aéronautique (interrompue par la pandémie)\n- Poursuivi des certifications avancées en machine learning et data science durant la période"
+      },
+      "recency": {
+        "asof_year": 2020,
+        "age_years": 6,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": false,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.2,
+          "individual_contributor": 0,
+          "managerial_scope": 0.2,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Professeur de Mathématiques",
+        "company_name": "Éducation Nationale",
+        "location_raw": null,
+        "date_start": "Septembre 2016",
+        "date_end": "Septembre 2019",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "Éducation Nationale | Professeur de Mathématiques | Septembre 2016 - Sep-\ntembre 2019\n- Enseigné les mathématiques au collège et lycée, développant de solides compétences en\ncommunication et analyse\n- Géré des environnements de classe et adapté les méthodes pédagogiques à divers styles"
+      },
+      "recency": {
+        "asof_year": 2019,
+        "age_years": 7,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "institution",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": false,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD25",
+            "label": "Formation & Transmission",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.15,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.2
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    }
+  }
+}

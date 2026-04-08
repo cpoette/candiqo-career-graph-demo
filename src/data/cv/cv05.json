@@ -1,0 +1,94 @@
+{
+  "id": "cv05",
+  "label": "Développeur Junior",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Développeur Fullstack",
+        "company_name": "Cerise Media - Digital Prisma Players (Vivendi)",
+        "location_raw": "Lille",
+        "date_start": "2022",
+        "date_end": "2024",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 11
+          }
+        ],
+        "excerpt": "Développeur Fullstack De 2022 à 2024\nCerise Media - Digital Prisma Players (Vivendi) Lille\nDéveloppement PHP fonctionnalités/correction de bugs.\nDéveloppement frontend. Amélioration des performances\nweb (Progressive Web App, accessibilité...). Mise en place\nde tâches automatisées (cron jobs) pour l'automatisation\ndes processus. Mise à jour et refactorisation de projets\nentiers( Angular 12 to 17), publication de librairies\ninternes sur NPM. Utilisation de pipelines CI/CD (GitLab,\nDocker). Rédaction de documentation technique et\nfonctionnelle. Travail en équipe Agile Scrum.\nCommunication avec des partenaires externes sur des"
+      },
+      "recency": {
+        "asof_year": 2024,
+        "age_years": 2,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD18",
+            "label": "Opérations & Exploitation",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.2,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    }
+  }
+}

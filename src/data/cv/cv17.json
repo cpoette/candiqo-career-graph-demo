@@ -1,0 +1,440 @@
+{
+  "id": "cv17",
+  "label": "Développeur AR / VR",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Développeur AR/VR",
+        "company_name": "INRIA",
+        "location_raw": "Rennes",
+        "date_start": "2023",
+        "date_end": null,
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "## Développeur AR/VR\nINRIA - Rennes - 2023\n- Application Unity AR/VR en C#\n- Recherche scientifique sur les retours pseudo haptiques\n- Mise en place expérimentation utilisateurs"
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "35238",
+        "zip_code": "35000",
+        "city_name": "RENNES",
+        "dept_code": "35",
+        "region_name": "BRETAGNE",
+        "lat": "48.11197912",
+        "lon": "-1.68186449"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "180089047",
+        "name": "INSTITUT NATIONAL DE RECHERCHE EN INFORMATIQUE ET EN AUTOMATIQUE",
+        "sigle": "INRIA",
+        "naf": "72.19Z",
+        "naf25": "72.10H",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "51",
+          "min": 2000,
+          "max": 4999,
+          "segment": "ETI"
+        },
+        "hq": {
+          "zip": "78150",
+          "city": "LE CHESNAY-ROCQUENCOURT",
+          "dept": "78",
+          "region": "11",
+          "lat": "48.836755",
+          "lon": "2.106541"
+        },
+        "matched_establishment": {
+          "siret": "18008904700021",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "72.19Z",
+          "activite_principale_naf25": "72.10H",
+          "tranche_effectif_salarie": {
+            "code": "32",
+            "label": "250-499",
+            "min": 250,
+            "max": 499,
+            "midpoint": 375,
+            "segment": "ETI"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "CAMPUS UNIVERSITAIRE DE BEAULIEU 263 AVENUE GENERAL LECLERC 35700 RENNES",
+          "zip": "35700",
+          "city": "RENNES",
+          "insee": "35238",
+          "dept": "35",
+          "region": "53",
+          "lat": "48.11547",
+          "lon": "-1.636991",
+          "date_creation": "1983-03-16",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "72",
+            "label": "Recherche-développement scientifique"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "ETI",
+            "employees": {
+              "min": 2000,
+              "max": 4999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD24",
+            "label": "Recherche & Développement",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Développeur Mobile AR",
+        "company_name": "FARM3",
+        "location_raw": "Paris Ve arr.",
+        "date_start": "2022",
+        "date_end": null,
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "## Développeur Mobile AR\nFARM3 - Paris Ve arr. - 2022\n- Design & Développement Application AR Mobile C#\n- Manipulation de données en temps réel\n- Application des feedbacks utilisateurs"
+      },
+      "recency": {
+        "asof_year": 2022,
+        "age_years": 4,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75105",
+        "zip_code": "75005",
+        "city_name": "PARIS-5E-ARRONDISSEMENT",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.84450866",
+        "lon": "2.34985939"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Développeur C# Unity",
+        "company_name": "Obvious Technologies",
+        "location_raw": "Nanterre",
+        "date_start": "2024",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "## Développeur C# Unity\n- 2024 Obvious Technologies - Nanterre\n- Programmation Orientée Objet C#\n- Architecture MVCS\n- SOLID"
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "92050",
+        "zip_code": "92000",
+        "city_name": "NANTERRE",
+        "dept_code": "92",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.89607013",
+        "lon": "2.20671346"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "845228618",
+        "name": "OBVIOUS TECHNOLOGIES",
+        "sigle": null,
+        "naf": "62.02A",
+        "naf25": "62.20G",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "12",
+          "min": 20,
+          "max": 49,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "92000",
+          "city": "NANTERRE",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.885647",
+          "lon": "2.222993"
+        },
+        "matched_establishment": {
+          "siret": "84522861800029",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "62.02A",
+          "activite_principale_naf25": "62.20G",
+          "tranche_effectif_salarie": {
+            "code": "12",
+            "label": "20-49",
+            "min": 20,
+            "max": 49,
+            "midpoint": 35,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "333 AVENUE GEORGES CLEMENCEAU 92000 NANTERRE",
+          "zip": "92000",
+          "city": "NANTERRE",
+          "insee": "92050",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.885647",
+          "lon": "2.222993",
+          "date_creation": "2021-07-16",
+          "date_debut_activite": "2021-07-16",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 0,
+          "resultat_net": 3413718
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 20,
+              "max": 49
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.05,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1046 @@
+{
+  "id": "cv12",
+  "label": "Chargé d'enseignement en informatique",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Ingénieur informatique",
+        "company_name": "Thales DMS",
+        "location_raw": "Sophia Antipolis",
+        "date_start": "octobre 2023",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 1
+          },
+          {
+            "candidate_id": "cand_2",
+            "line_start": 2,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Octobre 2023 -aujourd'hui- Ingénieur informatique à Thales DMS - Sophia Antipolis\nDéveloppement en méthodologie Agile d'une IHM en React Typescript et SpringBoot au sein du secteur SST (Sous-Marins, Bâtiments de surface et Torpilles) de Thales DMS.\n\nTechnologies abordées: React, Three.js, Electron.js, Redux, Docker, SpringBoot, Git, ClearCase, Jira, SonarQube, Jenkins, CI-CD, Maven."
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": null,
+        "zip_code": null,
+        "city_name": "Sophia Antipolis",
+        "dept_code": "06",
+        "region_name": "Provence-Alpes-Côte d'Azur",
+        "lat": null,
+        "lon": null
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "383475092",
+        "name": "THALES DMS FRANCE SAS",
+        "sigle": null,
+        "naf": "26.51A",
+        "naf25": "26.51Y",
+        "section_naf": "C",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "52",
+          "min": 5000,
+          "max": 9999,
+          "segment": "GE"
+        },
+        "hq": {
+          "zip": "78990",
+          "city": "ELANCOURT",
+          "dept": "78",
+          "region": "11",
+          "lat": "48.7904",
+          "lon": "1.97505"
+        },
+        "matched_establishment": {
+          "siret": "38347509200201",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "26.51A",
+          "activite_principale_naf25": "26.51Y",
+          "tranche_effectif_salarie": {
+            "code": "41",
+            "label": "500-999",
+            "min": 500,
+            "max": 999,
+            "midpoint": 750,
+            "segment": "ETI"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "BP 157 525 ROUTE DES DOLINES 06560 VALBONNE",
+          "zip": "06560",
+          "city": "VALBONNE",
+          "insee": "06152",
+          "dept": "06",
+          "region": "93",
+          "lat": "43.621498",
+          "lon": "7.036392",
+          "date_creation": "2017-12-31",
+          "date_debut_activite": "2017-12-31",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 2407183000,
+          "resultat_net": 479457000
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "C",
+            "label": "Industrie manufacturière"
+          },
+          "division": {
+            "code": "26",
+            "label": "Fabrication de produits informatiques, électroniques et optiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "GE",
+            "employees": {
+              "min": 5000,
+              "max": 9999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "GE",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD10",
+            "label": "Industrie",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0.15,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Apprenti - Ingénieur informatique",
+        "company_name": "Thales DMS",
+        "location_raw": "Sophia Antipolis",
+        "date_start": "novembre 2022",
+        "date_end": "septembre 2023",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 1
+          },
+          {
+            "candidate_id": "cand_3",
+            "line_start": 2,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Novembre 2022 -septembre 2023 - Apprenti - Ingénieur informatique à Thales DMS - Sophia Antipolis\nFormation d'ingénieur logiciel en alternance au sein du secteur SST.\n\nTechnologies abordées: React, Elasticsearch, Kibana, Grafana, Bitbucket, ClearCase, SonarQube, Jenkins, RedHat, CentOS."
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": null,
+        "zip_code": null,
+        "city_name": "Sophia Antipolis",
+        "dept_code": "06",
+        "region_name": "Provence-Alpes-Côte d'Azur",
+        "lat": null,
+        "lon": null
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "383475092",
+        "name": "THALES DMS FRANCE SAS",
+        "sigle": null,
+        "naf": "26.51A",
+        "naf25": "26.51Y",
+        "section_naf": "C",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "52",
+          "min": 5000,
+          "max": 9999,
+          "segment": "GE"
+        },
+        "hq": {
+          "zip": "78990",
+          "city": "ELANCOURT",
+          "dept": "78",
+          "region": "11",
+          "lat": "48.7904",
+          "lon": "1.97505"
+        },
+        "matched_establishment": {
+          "siret": "38347509200201",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "26.51A",
+          "activite_principale_naf25": "26.51Y",
+          "tranche_effectif_salarie": {
+            "code": "41",
+            "label": "500-999",
+            "min": 500,
+            "max": 999,
+            "midpoint": 750,
+            "segment": "ETI"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "BP 157 525 ROUTE DES DOLINES 06560 VALBONNE",
+          "zip": "06560",
+          "city": "VALBONNE",
+          "insee": "06152",
+          "dept": "06",
+          "region": "93",
+          "lat": "43.621498",
+          "lon": "7.036392",
+          "date_creation": "2017-12-31",
+          "date_debut_activite": "2017-12-31",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 2407183000,
+          "resultat_net": 479457000
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "C",
+            "label": "Industrie manufacturière"
+          },
+          "division": {
+            "code": "26",
+            "label": "Fabrication de produits informatiques, électroniques et optiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "GE",
+            "employees": {
+              "min": 5000,
+              "max": 9999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "GE",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD10",
+            "label": "Industrie",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0.15,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Apprenti - Ingénieur informatique",
+        "company_name": "Docaposte",
+        "location_raw": "Sophia Antipolis",
+        "date_start": "octobre 2021",
+        "date_end": "novembre 2022",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 0,
+            "line_end": 1
+          },
+          {
+            "candidate_id": "cand_4",
+            "line_start": 2,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Octobre 2021 -novembre 2022 - Apprenti - Ingénieur informatique à Docaposte - Sophia Antipolis\nFormation d'ingénieur informatique en alternance dans l'équipe de myGreffe (logiciel pour greffiers de tribunaux de commerce).\n\nTechnologies abordées: Docker, Spring Boot, React et Formiz, ETL Talend Open Studio, Elasticsearch -Logstash -Kibana (ELK), Git, Informatique décisionnelle, VirtualBox, BD Oracle et PostgreSQL. Recueil des exigences, diagramme Gantt, Proof Of Concept."
+      },
+      "recency": {
+        "asof_year": 2022,
+        "age_years": 4,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": null,
+        "zip_code": null,
+        "city_name": "Sophia Antipolis",
+        "dept_code": "06",
+        "region_name": "Provence-Alpes-Côte d'Azur",
+        "lat": null,
+        "lon": null
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "320217144",
+        "name": "DOCAPOSTE BPO",
+        "sigle": null,
+        "naf": "63.11Z",
+        "naf25": "62.10Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "42",
+          "min": 1000,
+          "max": 1999,
+          "segment": "ETI"
+        },
+        "hq": {
+          "zip": "94200",
+          "city": "IVRY-SUR-SEINE",
+          "dept": "94",
+          "region": "11",
+          "lat": "48.818505",
+          "lon": "2.397822"
+        },
+        "matched_establishment": {
+          "siret": "32021714400809",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "63.11Z",
+          "activite_principale_naf25": "63.10Y",
+          "tranche_effectif_salarie": {
+            "code": "12",
+            "label": "20-49",
+            "min": 20,
+            "max": 49,
+            "midpoint": 35,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "564 A 570 564 AV DU GAL DE GAULLE 06700 SAINT LAURENT DU VAR",
+          "zip": "06700",
+          "city": "SAINT LAURENT DU VAR",
+          "insee": "06123",
+          "dept": "06",
+          "region": "93",
+          "lat": "43.667089",
+          "lon": "7.192524",
+          "date_creation": "2000-04-01",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 243594828,
+          "resultat_net": -13627158
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "63",
+            "label": "Services d'information"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "ETI",
+            "employees": {
+              "min": 1000,
+              "max": 1999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Stagiaire - Développeur web",
+        "company_name": "Euro TP",
+        "location_raw": "Cannes la Bocca",
+        "date_start": "mai 2021",
+        "date_end": "août 2021",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 0,
+            "line_end": 1
+          }
+        ],
+        "excerpt": "Mai 2021 -août 2021 - Stagiaire - Développeur web à Euro TP - Cannes la bocca\nCréation d'un site web vitrine (eurotp.fr). C réation d'un service de suivi de chantier en PHP avec BD MySQL + remontée d'alerte via tâche Cron."
+      },
+      "recency": {
+        "asof_year": 2021,
+        "age_years": 5,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": null,
+        "zip_code": "06150",
+        "city_name": "Cannes La Bocca",
+        "dept_code": "06",
+        "region_name": "Provence-Alpes-Côte d'Azur",
+        "lat": null,
+        "lon": null
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "short_brand_no_exact_match",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.85,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "Stagiaire - Développeur web",
+        "company_name": "Odealim",
+        "location_raw": "Paris",
+        "date_start": "avril 2020",
+        "date_end": "juillet 2020",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_6",
+            "line_start": 0,
+            "line_end": 0
+          }
+        ],
+        "excerpt": "Avril 2020 -juillet 2020 - Stagiaire - Développeur web à Odealim - Paris Refonte + création de sites web et développement d'un intranet pour Odealim, courtiers d'assurance."
+      },
+      "recency": {
+        "asof_year": 2020,
+        "age_years": 6,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "822532529",
+        "name": "ODEALIM",
+        "sigle": null,
+        "naf": "66.22Z",
+        "naf25": "66.22Y",
+        "section_naf": "K",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "75001",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.864504",
+          "lon": "2.336326"
+        },
+        "matched_establishment": {
+          "siret": "82253252900036",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "66.22Z",
+          "activite_principale_naf25": "66.22Y",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "14 RUE DE RICHELIEU 75001 PARIS",
+          "zip": "75001",
+          "city": "PARIS",
+          "insee": "75101",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.864504",
+          "lon": "2.336326",
+          "date_creation": "2018-05-01",
+          "date_debut_activite": "2024-06-05",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2023,
+          "ca": 0,
+          "resultat_net": -18680645
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "K",
+            "label": "Activités financières et d'assurance"
+          },
+          "division": {
+            "code": "66",
+            "label": "Activités auxiliaires de services financiers et d'assurance"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": null,
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "declared_only",
+            "confidence": 0.6
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.8,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD03",
+            "label": "Banque, assurance & finance",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "6": {
+      "identity": {
+        "job_title": "Chargé d'enseignement",
+        "company_name": "Université Côte d'Azur",
+        "location_raw": "Nice",
+        "date_start": "septembre 2024",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Septembre 2024 -aujourd'hui- Chargé d'enseignement à l'Université Côté d'Azur - Nice\nChargé d'enseignement en BUT3 Informatique. 40h de TD, 9h de CM. Resource « Nouveaux paradigmes de base de données ».\nCha rgé d'enseignement en BUT 2 Informatique. 36h de TD, 6h de CM. Resource « Architecture logicielle »."
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "06088",
+        "zip_code": "06000",
+        "city_name": "NICE",
+        "dept_code": "06",
+        "region_name": "PROVENCE-ALPES-COTE D'AZUR",
+        "lat": "43.71199927",
+        "lon": "7.23826889"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "institution",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD25",
+            "label": "Formation & Transmission",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "7": {
+      "identity": {
+        "job_title": "Employé",
+        "company_name": "Carrefour Antibes",
+        "location_raw": null,
+        "date_start": "juillet 2018",
+        "date_end": "décembre 2021",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_6",
+            "line_start": 2,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Réassortiment en rayon, responsabilité de la rotation et de la chaîne de froid, maîtrise de la relation client."
+      },
+      "recency": {
+        "asof_year": 2021,
+        "age_years": 5,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "451321335",
+        "name": "CARREFOUR HYPERMARCHES",
+        "sigle": null,
+        "naf": "47.11F",
+        "naf25": "47.11K",
+        "section_naf": "G",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "53",
+          "min": 10000,
+          "max": null,
+          "segment": "GE"
+        },
+        "hq": {
+          "zip": "91000",
+          "city": "EVRY-COURCOURONNES",
+          "dept": "91",
+          "region": "11",
+          "lat": "48.625921",
+          "lon": "2.41324"
+        },
+        "matched_establishment": {
+          "siret": "45132133500270",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "47.11F",
+          "activite_principale_naf25": "47.11K",
+          "tranche_effectif_salarie": {
+            "code": "41",
+            "label": "500-999",
+            "min": 500,
+            "max": 999,
+            "midpoint": 750,
+            "segment": "ETI"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "CHEMIN DE SAINT CLAUDE 06600 ANTIBES",
+          "zip": "06600",
+          "city": "ANTIBES",
+          "insee": "06004",
+          "dept": "06",
+          "region": "93",
+          "lat": "43.599323",
+          "lon": "7.099705",
+          "date_creation": "2006-02-01",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 11770276417,
+          "resultat_net": -408055834
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "G",
+            "label": "Commerce"
+          },
+          "division": {
+            "code": "47",
+            "label": "Commerce de détail, à l'exception des automobiles et des motocycles"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "GE",
+            "employees": {
+              "min": 10000,
+              "max": null
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "GE",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD19",
+            "label": "Supply chain & Logistique",
+            "score": 0.85,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD05",
+            "label": "Commerce & retail",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.2,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0.35,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,445 @@
+{
+  "id": "cv01",
+  "label": "Ingénieur / Chef de Projet / Maker",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Consultant Chef de Projet & Team Leader",
+        "company_name": "ATOS",
+        "location_raw": "Lille, FRANCE",
+        "date_start": "Octobre 2019",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 13
+          }
+        ],
+        "excerpt": "#### Consultant Chef de Projet & Team Leader - ATOS\nLille, FRANCE - Octobre 2019 à aujourd'hui\nMission de gestion de projet fonctionnel et technique\n- Auchan Energies: Projets Confidentiels à forts enjeux\nòÒrganisation d'ateliers métiers Design Thinking\nò` Mise en conformité Architecture & Sécurité\nò` Management de ressources techniques et métiers\nò` Suivi, chiffrage et pilotage des projets\n- Responsable du Maintien en Condition Opérationnelle\n- Procédure d'intervention sur le RUN et l'exploitation\n- Mise en place des correctifs et demandes d'évolution\n- Formation et mise en place des méthodologies Agiles\nTeam Leader ATOS\n- Suivi des missions des collaborateurs ATOS chez Auchan"
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 8,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "408024719",
+        "name": "ATOS FRANCE",
+        "sigle": null,
+        "naf": "62.02A",
+        "naf25": "62.20G",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "52",
+          "min": 5000,
+          "max": 9999,
+          "segment": "GE"
+        },
+        "hq": {
+          "zip": "95870",
+          "city": "BEZONS",
+          "dept": "95",
+          "region": "11",
+          "lat": "48.92403",
+          "lon": "2.222832"
+        },
+        "matched_establishment": {
+          "siret": "40802471900747",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "62.02A",
+          "activite_principale_naf25": "62.20G",
+          "tranche_effectif_salarie": {
+            "code": "31",
+            "label": "200-249",
+            "min": 200,
+            "max": 249,
+            "midpoint": 225,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "78 RUE DE LA CHAUDE RIVIERE 59800 LILLE",
+          "zip": "59800",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634501",
+          "lon": "3.082589",
+          "date_creation": "2019-12-01",
+          "date_debut_activite": "2019-12-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 1000371588,
+          "resultat_net": -52337549
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "GE",
+            "employees": {
+              "min": 5000,
+              "max": 9999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "GE",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD01",
+            "label": "Direction & Stratégie",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.9,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Ingénieur Chef de Projet R&D Smart City",
+        "company_name": "CITC-EuraRFID",
+        "location_raw": "Lille, France",
+        "date_start": "Septembre 2016",
+        "date_end": "Octobre 2019",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 10
+          }
+        ],
+        "excerpt": "#### Ingénieur Chef de Projet R&D Smart City - CITC-EuraRFID\nLille, France - Septembre 2016 à Octobre 2019\n- Accompagnement des porteurs de projet, PME, grands comptes et\ncollectivités dans leurs projets IoT et Smart City/Smart Grids.\n- Mise en place de « Proof of concept » et expérimentations techniques sur\nla métropole lilloise.\n- Principe UX/UI Design dans le but d'améliorer ou développer de nouveaux\nusages\n- Formation en école supérieurs des technologies RFID/NFC et de la Smart\nCity.\n- Animation d'ateliers CoDesign - Design Thinking et intelligence collective."
+      },
+      "recency": {
+        "asof_year": 2019,
+        "age_years": 7,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "511568602",
+        "name": "CENTRE D'INNOVATION DES TECHNOLOGIES SANS CONTACT EURARFID",
+        "sigle": "CITC EURARFID",
+        "naf": "71.20B",
+        "naf25": "71.20H",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "11",
+          "min": 10,
+          "max": 19,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "59000",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.63367",
+          "lon": "3.019268"
+        },
+        "matched_establishment": {
+          "siret": "51156860200011",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "71.20B",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "165 AVENUE DE BRETAGNE 59000 LILLE",
+          "zip": "59000",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634235",
+          "lon": "3.021289",
+          "date_creation": "2009-01-29",
+          "date_debut_activite": "2019-06-26",
+          "date_fermeture": "2019-06-26"
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "71",
+            "label": "Activités d'architecture et d'ingénierie ; activités de contrôle et analyses techniques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 10,
+              "max": 19
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD13",
+            "label": "Design & UX",
+            "score": 0.65,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.25,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Enseignant/Intervenant",
+        "company_name": "Région Haut de France",
+        "location_raw": "Région Haut de France, France",
+        "date_start": "Janvier 2017",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 10
+          }
+        ],
+        "excerpt": "#### Enseignant/Intervenant - Région Haut de France\nRégion Haut de France, France - Janvier 2017 à aujourd'hui\nIntervention en école d'ingénieurs et Master spécialisé sur les sujets suivants:\n- Les technologies RFID/NFC\n- La 5G\n- Vision stratégique et technique de la Smart City\n- L'Internet des Objets\n- Sensibilisation à la Big Data\n- La Fabrication Additive"
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 10,
+        "weight": 1
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "institution",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": true,
+        "execution_signal": false,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD25",
+            "label": "Formation & Transmission",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0.45,
+          "execution_scope": 0
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "id": "cv15",
+  "label": "Ingénieur Bio-informatique",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Chercheur stagiaire puis Ingénieur de recherche",
+        "company_name": "Institut Pasteur",
+        "location_raw": "Paris, France",
+        "date_start": "Apr. 2018",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 7
+          }
+        ],
+        "excerpt": "Institut Pasteur _Paris, France_\nCHERCHEUR STAGIAIRE PUIS INGÉNIEUR DE RECHERCHE _Apr. 2018 - Aujourd'hui_\n- Étude des phénomènes de pharmaco-résistance dans ls protéine _pol_ -RT du VIH-1 en utilisant l'apprentissage automatique\n- Continuation du travail effectué en stage de master de recherche\n- Présentation d'un poster à MCEB 2019\n- Article en cours de rédaction\n- Implémentation en Python et en R dans des _pipelines_ Snakemake\n- Utilisation de SLURM et d'un cluster de calcul haute performances"
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 9,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "775684897",
+        "name": "INSTITUT PASTEUR",
+        "sigle": null,
+        "naf": "72.19Z",
+        "naf25": "72.10H",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "51",
+          "min": 2000,
+          "max": 4999,
+          "segment": "ETI"
+        },
+        "hq": {
+          "zip": "75015",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.840404",
+          "lon": "2.310639"
+        },
+        "matched_establishment": {
+          "siret": "77568489700165",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "68.32A",
+          "activite_principale_naf25": "68.32H",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "70 AVENUE DE BRETEUIL 75007 PARIS",
+          "zip": "75007",
+          "city": "PARIS",
+          "insee": "75107",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.848252",
+          "lon": "2.311246",
+          "date_creation": "2012-01-01",
+          "date_debut_activite": "2012-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "72",
+            "label": "Recherche-développement scientifique"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "ETI",
+            "employees": {
+              "min": 2000,
+              "max": 4999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD24",
+            "label": "Recherche & Développement",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD04",
+            "label": "Immobilier",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Stagiaire Data-Scientist",
+        "company_name": "CapitalData",
+        "location_raw": "Paris, France",
+        "date_start": "Mars 2017",
+        "date_end": "Août 2017",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 5
+          }
+        ],
+        "excerpt": "CapitalData _Paris, France_\nSTAGIAIRE \"DATA-SCIENTIST\" _Mars - Août 2017_\n- Dévelopment de méthodes de validation de données at de détection d'anomalie automatiques en Golang et en R\n- Tests statistiques automatisés en Python\n- Reporting interne et orienté client avec BIME, MySQL, Periscope et Mode\n- Visualisation de données"
+      },
+      "recency": {
+        "asof_year": 2017,
+        "age_years": 9,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "511560211",
+        "name": "CAPITALDATA",
+        "sigle": null,
+        "naf": "70.22Z",
+        "naf25": "70.20Y",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "03",
+          "min": 6,
+          "max": 9,
+          "segment": "MIC"
+        },
+        "hq": {
+          "zip": "75009",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.877492",
+          "lon": "2.334355"
+        },
+        "matched_establishment": {
+          "siret": "51156021100043",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "70.22Z",
+          "activite_principale_naf25": "70.20Y",
+          "tranche_effectif_salarie": {
+            "code": "03",
+            "label": "6-9",
+            "min": 6,
+            "max": 9,
+            "midpoint": 8,
+            "segment": "MIC"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "8 RUE CATHERINE DE LA ROCHEFOUCAULD 75009 PARIS",
+          "zip": "75009",
+          "city": "PARIS",
+          "insee": "75109",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.877492",
+          "lon": "2.334355",
+          "date_creation": "2016-02-22",
+          "date_debut_activite": "2016-02-22",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 1283560,
+          "resultat_net": 359467
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "70",
+            "label": "Activités des sièges sociaux ; conseil de gestion"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "MIC",
+            "employees": {
+              "min": 6,
+              "max": 9
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "MIC",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 1,
+          "managerial_scope": 0.2,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Tutorat",
+        "company_name": "Auto-entrepreneur",
+        "location_raw": "Paris, France",
+        "date_start": "2016",
+        "date_end": "2018",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 3
+          }
+        ],
+        "excerpt": "Auto-entrepreneur _Paris, France_\nTUTORAT _2016 - 2018_\n- Enseignement des mathématiques, physique et chimie au niveau lycée\n- Enseignement de la grammaire et conversation anglaise"
+      },
+      "recency": {
+        "asof_year": 2018,
+        "age_years": 8,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "freelance",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD25",
+            "label": "Formation & Transmission",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "id": "cv20",
+  "label": "Chef de projet Data Analyst",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "CHEF DE PROJET DATA ANALYST, DÉPARTEMENT FINOPS",
+        "company_name": "Groupe TF1",
+        "location_raw": null,
+        "date_start": "Octobre 2024",
+        "date_end": "Mars 2026",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 7
+          }
+        ],
+        "excerpt": "## CHEF DE PROJET DATA ANALYST, DÉPARTEMENT FINOPS\nGroupe TF1 Octobre 2024 - Mars 2026\nCadrage et pilotage d'un projet FinOps d'extinction automatique des VMs hors horaires\nouvrés, depuis l'idéation jusqu'au déploiement, générant 35 000 € d'économies annuelles.\nConception et industrialisation d'un dashboard Power BI (Azure & AWS) pour le suivi\nbudgétaire, identifiant jusqu'à 15 % d'économies potentielle s.\nRéunions et présentation des résultats FinOps aux équipes métiers pour l'adoption des\nbonnes pratiques FinOps."
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "ambiguous_no_geo",
+        "group_hints": [],
+        "best_guess": {
+          "siren": "311473383",
+          "name": "TF1 PUBLICITE",
+          "score": 0.9,
+          "reason": "largest_declared_group_like_recent_xp",
+          "confidence": 0.45
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": true,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD02",
+            "label": "Finance & Comptabilité",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 1,
+          "managerial_scope": 0.45,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0.8,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "BUSINESS DATA ANALYST",
+        "company_name": "Lab Event",
+        "location_raw": null,
+        "date_start": "Janvier 2024",
+        "date_end": "Juin 2024",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 8
+          }
+        ],
+        "excerpt": "## BUSINESS DATA ANALYST\nLab Event\nJanvier 2024 -Juin 2024\nCadrage et analyse de bases de données (+100 000 lignes), générant des insights\nstratégiques pour la prise de décision.\nConception et automatisation de +20 tableaux de bord orientés KPI, permettant une\nréduction de 30 % du temps de reporting et une amélioration de 20 % de l'efficacité\nopérationnelle.\nRôle de Product Owner junior: conduite de +15 consultations clients (recueil des besoins,"
+      },
+      "recency": {
+        "asof_year": 2024,
+        "age_years": 2,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "ambiguous_no_geo",
+        "group_hints": [],
+        "best_guess": {
+          "siren": "879740629",
+          "name": "LAB EVENT",
+          "score": 1,
+          "reason": "largest_company_recent_xp",
+          "confidence": 0.35
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.65,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 1,
+          "managerial_scope": 0.2,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0.45,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "DATA SCIENTIST JUNIOR",
+        "company_name": "Alstom Group",
+        "location_raw": null,
+        "date_start": "Février 2022",
+        "date_end": "Juin 2022",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 7
+          }
+        ],
+        "excerpt": "## DATA SCIENTIST JUNIOR\nAlstom Group Février 2022 - Juin 2022\nDéfinition et implémentation d'algorithmes prédictifs pour anticiper la\ndétérioration de pièces de train, réduisant les pannes imprévues de 30 % et\noptimisant la maintenance.\nData engineering et préparation: extraction, nettoyage et traitement de plus de 3\nmillions d'enregistrements pour garantir une précision des modèles > 90 %.\nApproche end-to-end: cadrage du besoin métier, prototypage, validation et mise"
+      },
+      "recency": {
+        "asof_year": 2022,
+        "age_years": 4,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "micro_ambiguous",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 1,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    }
+  }
+}

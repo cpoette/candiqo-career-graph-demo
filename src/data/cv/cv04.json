@@ -1,0 +1,1309 @@
+{
+  "id": "cv04",
+  "label": "Ingénieur Développement et Traitement du Signal",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Ingénieur Développement et Traitement du Signal",
+        "company_name": "Elno (Communications Défense et Sécurité)",
+        "location_raw": "Argenteuil",
+        "date_start": "Septembre 2018",
+        "date_end": null,
+        "is_current": true
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 5
+          }
+        ],
+        "excerpt": "Elno (Communications Défense et Sécurité) Depuis Septembre 2018\n_Ingénieur Développement et Traitement du Signal Argenteuil_\n- Développement d'algorithmes audio\n- Portage d'algorithme sur DSP\n- Optimisation du code sous contraintes, tests unitaires, validations\n- Rédaction des documentations"
+      },
+      "recency": {
+        "asof_year": 2026,
+        "age_years": 0,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 9,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "95018",
+        "zip_code": "95100",
+        "city_name": "ARGENTEUIL",
+        "dept_code": "95",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.95113446",
+        "lon": "2.24104095"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "384894978",
+        "name": "ELNO",
+        "sigle": null,
+        "naf": "26.30Z",
+        "naf25": "26.30Y",
+        "section_naf": "C",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "95100",
+          "city": "ARGENTEUIL",
+          "dept": "95",
+          "region": "11",
+          "lat": "48.934641",
+          "lon": "2.237416"
+        },
+        "matched_establishment": {
+          "siret": "38489497800038",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "26.30Z",
+          "activite_principale_naf25": "26.30Y",
+          "tranche_effectif_salarie": {
+            "code": "21",
+            "label": "50-99",
+            "min": 50,
+            "max": 99,
+            "midpoint": 75,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "43 RUE MICHEL CARRE 95100 ARGENTEUIL",
+          "zip": "95100",
+          "city": "ARGENTEUIL",
+          "insee": "95018",
+          "dept": "95",
+          "region": "11",
+          "lat": "48.934641",
+          "lon": "2.237416",
+          "date_creation": "2005-04-22",
+          "date_debut_activite": "2010-12-14",
+          "date_fermeture": null
+        },
+        "group_hints": ["Communications Défense et Sécurité"],
+        "finance": {
+          "year": 2022,
+          "ca": 14425913,
+          "resultat_net": 1668620
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "C",
+            "label": "Industrie manufacturière"
+          },
+          "division": {
+            "code": "26",
+            "label": "Fabrication de produits informatiques, électroniques et optiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD10",
+            "label": "Industrie",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.05,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Développeur Freelance d'Algorithmes",
+        "company_name": "Acoustical Beauty",
+        "location_raw": "Saint-Pierre-du-Perray",
+        "date_start": "Juillet 2018",
+        "date_end": "Août 2018",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "Acoustical Beauty Juillet 2018 - Août 2018\n_Développeur Freelance d'Algorithmes Saint-Pierre-du-Perray_\n- Développement d'algorithmes de sur-échantillonnage audio"
+      },
+      "recency": {
+        "asof_year": 2018,
+        "age_years": 8,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "91573",
+        "zip_code": "91280",
+        "city_name": "SAINT-PIERRE-DU-PERRAY",
+        "dept_code": "91",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.60582826",
+        "lon": "2.51614927"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "freelance",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Ingénieur Traitement du Signal",
+        "company_name": "Arkamys (Audio embarqué, automobile)",
+        "location_raw": "Paris",
+        "date_start": "Avril 2016",
+        "date_end": "Juin 2018",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "Arkamys (Audio embarqué, automobile) Avril 2016 - Juin 2018\n_Ingénieur Traitement du Signal Paris_\n- Développement et mise à jour d'algorithmes de traitement audio\n- Portage d'algorithmes sur un DSP\n- Optimisation du code sous contraintes, tests unitaires, validations"
+      },
+      "recency": {
+        "asof_year": 2018,
+        "age_years": 8,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "419850417",
+        "name": "ARKAMYS",
+        "sigle": null,
+        "naf": "58.29C",
+        "naf25": "77.40G",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "92300",
+          "city": "LEVALLOIS-PERRET",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.898403",
+          "lon": "2.291372"
+        },
+        "matched_establishment": {
+          "siret": "41985041700041",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "77.40Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "31 RUE POUCHET 75017 PARIS",
+          "zip": "75017",
+          "city": "PARIS",
+          "insee": "75117",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.893172",
+          "lon": "2.319669",
+          "date_creation": "2009-12-01",
+          "date_debut_activite": "2019-12-01",
+          "date_fermeture": "2019-12-01"
+        },
+        "group_hints": ["Audio embarqué", "automobile"],
+        "finance": {
+          "year": 2024,
+          "ca": 11369240,
+          "resultat_net": -382459
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "58",
+            "label": "Édition"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD06",
+            "label": "Média, édition & contenu",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.05,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Ingénieur R&D et Traitement du Signal",
+        "company_name": "DMS/Auro Technologies (Cinéma, home-cinéma)",
+        "location_raw": "Lognes",
+        "date_start": "Juillet 2012",
+        "date_end": "Février 2016",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 0,
+            "line_end": 6
+          }
+        ],
+        "excerpt": "DMS/Auro Technologies (Cinéma, home-cinéma) Juillet 2012 - Février 2016\n_Ingénieur R&D et Traitement du Signal Lognes_\n- Implémentation d'un code binaural\n- Représentant de DMS auprès du consortium BiLi (Binaural Listening)\n- Développement d'algorithmes de post-processing\n- Suivi des certifications Dolby et DTS\n- Rédaction des documentations, tests unitaires et validations"
+      },
+      "recency": {
+        "asof_year": 2016,
+        "age_years": 10,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 5,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "77258",
+        "zip_code": "77185",
+        "city_name": "LOGNES",
+        "dept_code": "77",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.83328060",
+        "lon": "2.63346363"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": ["Cinéma", "home-cinéma"]
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.2,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "Ingénieur Recherche et Développement",
+        "company_name": "CADLM",
+        "location_raw": "Massy",
+        "date_start": "Janvier 2011",
+        "date_end": "Juillet 2012",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 0,
+            "line_end": 5
+          }
+        ],
+        "excerpt": "CADLM Janvier 2011 - Juillet 2012\n_Ingénieur Recherche et Développement Massy_\n- Calcul Scientifique, Analyse Numérique et Intelligence Artificielle\n- Développement d'outils mathématiques\n- Implémentation de réseaux de neurones et conception de librairies mathématiques en Python\n- Développement d'outils de datamining"
+      },
+      "recency": {
+        "asof_year": 2012,
+        "age_years": 14,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "71288",
+        "zip_code": "71250",
+        "city_name": "MASSY",
+        "dept_code": "71",
+        "region_name": "BOURGOGNE",
+        "lat": "46.48986797",
+        "lon": "4.60948901"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "349154583",
+        "name": "CADLM",
+        "sigle": null,
+        "naf": "71.12B",
+        "naf25": "71.12Y",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "91190",
+          "city": "SAINT-AUBIN",
+          "dept": "91",
+          "region": "11",
+          "lat": "48.71027",
+          "lon": "2.148496"
+        },
+        "matched_establishment": {
+          "siret": "34915458300042",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "71.12B",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "PARC DU MOULIN DE MASSY 43 RUE DU SAULE TRAPU 91300 MASSY",
+          "zip": "91300",
+          "city": "MASSY",
+          "insee": "91377",
+          "dept": "91",
+          "region": "11",
+          "lat": "48.728617",
+          "lon": "2.301835",
+          "date_creation": "2011-04-27",
+          "date_debut_activite": "2017-04-01",
+          "date_fermeture": "2017-04-01"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 1220129,
+          "resultat_net": 445761
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "71",
+            "label": "Activités d'architecture et d'ingénierie ; activités de contrôle et analyses techniques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": null,
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "declared_only",
+            "confidence": 0.6
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD24",
+            "label": "Recherche & Développement",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD09",
+            "label": "Construction & BTP",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "6": {
+      "identity": {
+        "job_title": "Ingénieur d'études",
+        "company_name": "LIMSI-CNRS (Mécanique des fluides, sciences de l'ingénieur, aéro)",
+        "location_raw": "Orsay",
+        "date_start": "Septembre 2009",
+        "date_end": "Août 2010",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_6",
+            "line_start": 0,
+            "line_end": 6
+          }
+        ],
+        "excerpt": "LIMSI-CNRS (Mécanique des fluides, sciences de l'ingénieur, aéro) Septembre 2009 - Août 2010\n_Ingénieur d'études Orsay_\n- Projet 1: prise en compte des incertitudes\n- Développement des librairies stochastiques\n- Implémentation des incertitudes dans le code principal\n- Projet 2: Assemblage de l'opérateur Laplacien\n- Conception et développement d'une méthode de maillage de type \"arbre\""
+      },
+      "recency": {
+        "asof_year": 2010,
+        "age_years": 16,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "91471",
+        "zip_code": "91400",
+        "city_name": "ORSAY",
+        "dept_code": "91",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.70040940",
+        "lon": "2.18737051"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "180089013",
+        "name": "CENTRE NATIONAL DE LA RECHERCHE SCIENTIFIQUE",
+        "sigle": "CNRS",
+        "naf": "72.19Z",
+        "naf25": "72.10H",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "GE",
+        "tranche_effectif": {
+          "code": "53",
+          "min": 10000,
+          "max": null,
+          "segment": "GE"
+        },
+        "hq": {
+          "zip": "75016",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.847606",
+          "lon": "2.264027"
+        },
+        "matched_establishment": {
+          "siret": "18008901304744",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "72.19Z",
+          "activite_principale_naf25": "72.10H",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "UNIVERSITE PARIS SUD 11-BAT 510 15 RUE GEORGES CLEMENCEAU 91400 ORSAY",
+          "zip": "91400",
+          "city": "ORSAY",
+          "insee": "91471",
+          "dept": "91",
+          "region": "11",
+          "lat": "48.698931",
+          "lon": "2.177998",
+          "date_creation": "1970-01-01",
+          "date_debut_activite": "1970-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [
+          "Mécanique des fluides",
+          "sciences de l'ingénieur",
+          "aéro"
+        ],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "72",
+            "label": "Recherche-développement scientifique"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "GE",
+            "employees": {
+              "min": 10000,
+              "max": null
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "GE",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "GE",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.8,
+            "confidence": "high"
+          },
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.15,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "7": {
+      "identity": {
+        "job_title": "Ingénieur Stagiaire",
+        "company_name": "BRGM (Industrie, sous-sols, risques naturels)",
+        "location_raw": "Orléans",
+        "date_start": "Avril 2009",
+        "date_end": "Août 2009",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_7",
+            "line_start": 0,
+            "line_end": 3
+          }
+        ],
+        "excerpt": "BRGM (Industrie, sous-sols, risques naturels) Avril 2009 - Août 2009\n_Ingénieur Stagiaire Orléans_\n- Modélisation hydromécanique du stockage géologique du CO2\n- Couplage de codes, tests et validations"
+      },
+      "recency": {
+        "asof_year": 2009,
+        "age_years": 17,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "45234",
+        "zip_code": "45000",
+        "city_name": "ORLEANS",
+        "dept_code": "45",
+        "region_name": "CENTRE",
+        "lat": "47.88286342",
+        "lon": "1.91610357"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "582056149",
+        "name": "BRGM",
+        "sigle": "BRGM",
+        "naf": "72.19Z",
+        "naf25": "72.10H",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "42",
+          "min": 1000,
+          "max": 1999,
+          "segment": "ETI"
+        },
+        "hq": {
+          "zip": "45100",
+          "city": "ORLEANS",
+          "dept": "45",
+          "region": "24",
+          "lat": "47.829911",
+          "lon": "1.93729"
+        },
+        "matched_establishment": {
+          "siret": "58205614900120",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "72.19Z",
+          "activite_principale_naf25": "72.10H",
+          "tranche_effectif_salarie": {
+            "code": "41",
+            "label": "500-999",
+            "min": 500,
+            "max": 999,
+            "midpoint": 750,
+            "segment": "ETI"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "3 AVENUE CLAUDE GUILLEMIN 45100 ORLEANS",
+          "zip": "45100",
+          "city": "ORLEANS",
+          "insee": "45234",
+          "dept": "45",
+          "region": "24",
+          "lat": "47.829911",
+          "lon": "1.93729",
+          "date_creation": "1900-01-01",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": ["Industrie", "sous-sols", "risques naturels"],
+        "finance": {
+          "year": 2021,
+          "ca": 61399000,
+          "resultat_net": 12146000
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "72",
+            "label": "Recherche-développement scientifique"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "ETI",
+            "employees": {
+              "min": 1000,
+              "max": 1999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "8": {
+      "identity": {
+        "job_title": "Ingénieur Stagiaire",
+        "company_name": "ONERA (Aéronautique, Défense)",
+        "location_raw": "Palaiseau",
+        "date_start": "Avril 2008",
+        "date_end": "Juillet 2008",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_8",
+            "line_start": 0,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "ONERA (Aéronautique, Défense) Avril 2008 - Juillet 2008\n_Ingénieur Stagiaire Palaiseau_\n- Modélisation de la réfraction atmosphérique par un schéma numérique à pas de discrétisation variable"
+      },
+      "recency": {
+        "asof_year": 2008,
+        "age_years": 18,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "91477",
+        "zip_code": "91120",
+        "city_name": "PALAISEAU",
+        "dept_code": "91",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.71467659",
+        "lon": "2.22881488"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "775722879",
+        "name": "OFF NAT ETUDES RECHERCHES AEROSPATIALES",
+        "sigle": "ONERA",
+        "naf": "72.19Z",
+        "naf25": "72.10H",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "51",
+          "min": 2000,
+          "max": 4999,
+          "segment": "ETI"
+        },
+        "hq": {
+          "zip": "91120",
+          "city": "PALAISEAU",
+          "dept": "91",
+          "region": "11",
+          "lat": "48.709392",
+          "lon": "2.224312"
+        },
+        "matched_establishment": {
+          "siret": "77572287900084",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "72.19Z",
+          "activite_principale_naf25": "72.10H",
+          "tranche_effectif_salarie": {
+            "code": "41",
+            "label": "500-999",
+            "min": 500,
+            "max": 999,
+            "midpoint": 750,
+            "segment": "ETI"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "CHEM DE LA VAUVE AUX GRA CHEMIN DE LA HUNIERE 91120 PALAISEAU",
+          "zip": "91120",
+          "city": "PALAISEAU",
+          "insee": "91477",
+          "dept": "91",
+          "region": "11",
+          "lat": "48.709392",
+          "lon": "2.224312",
+          "date_creation": "1900-01-01",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": ["Aéronautique", "Défense"],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "72",
+            "label": "Recherche-développement scientifique"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "ETI",
+            "employees": {
+              "min": 2000,
+              "max": 4999
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "ETI",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.8,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.1,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "9": {
+      "identity": {
+        "job_title": "Projet Orsay",
+        "company_name": null,
+        "location_raw": "Orsay",
+        "date_start": "2008",
+        "date_end": null,
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_7",
+            "line_start": 4,
+            "line_end": 6
+          }
+        ],
+        "excerpt": "Université Paris-Sud 2008\n_Projet Orsay_\n- Résolution des équations de Laplace et de la chaleur par la méthode des éléments finis"
+      },
+      "recency": {
+        "asof_year": 2008,
+        "age_years": 18,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "91471",
+        "zip_code": "91400",
+        "city_name": "ORSAY",
+        "dept_code": "91",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.70040940",
+        "lon": "2.18737051"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    }
+  }
+}

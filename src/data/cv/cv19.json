@@ -1,0 +1,1040 @@
+{
+  "id": "cv19",
+  "label": "Cyber Security Architect",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Cyber Security Architect / Ninja Developer / SecOps / PO",
+        "company_name": "Continental Digital Services",
+        "location_raw": "Toulouse - France",
+        "date_start": "June 2017",
+        "date_end": null,
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 1,
+            "line_end": 14
+          }
+        ],
+        "excerpt": "_Cyber Security Architect / Ninja Developer / SecOps / PO June 2017 -_\n- Product Owner pour produits Sécurité / DevOps.\n- Technical leader / Golang guru.\n- Définition des services de cyber risk monitoring (AWS).\n- Définition plateforme de production (Data, Services, Produits, Operations).\n- Définition stratégie \"Security By Design\".\n- Plateforme de communication sécurisée Voiture connectée / IoT <-> Cloud. (HTTP, MQTT, CoAP)\n- Plateforme d'identification et contrôle d'accès distribuée. (AWS, Go, OIDC / SAML2)\n- Protocole d'identification respectant la vie privée. (Crypto, ZKP)\n- Etude d'intégration de blockchain. (Data Sharing, Licensing)\n- Mesures techniques CyberSécurité liées au RGPD. (Crypto, Go, Java, Scala)\n- Rédaction des guides de durcissement. (AWS, Docker / K8S)\n- Audits et conseils d'architecture. (Threat Model)\n- Audits et conseils de code sécurité. (Java / J2EE, NodeJS, Python, Go, Crypto)"
+      },
+      "recency": {
+        "asof_year": 2017,
+        "age_years": 9,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "31555",
+        "zip_code": "31000",
+        "city_name": "TOULOUSE",
+        "dept_code": "31",
+        "region_name": "MIDI-PYRENEES",
+        "lat": "43.59638143",
+        "lon": "1.43167293"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD17",
+            "label": "Cybersécurité",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.55,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0.6,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Cyber Security Expert / Data Architect / Full Stack Developer / DevOps",
+        "company_name": "Sogeti ESEC",
+        "location_raw": "Toulouse - France",
+        "date_start": "October 2013",
+        "date_end": "June 2017",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 1,
+            "line_end": 12
+          }
+        ],
+        "excerpt": "_Cyber Security Expert / Data Architect / Full Stack Developer / DevOps October 2013 - June 2017_\n- Développement outils CERT / SOC.\n- Outil de gestion d'incidents Jira / QRadar (Go, Javascript, RethinkDB)\n- Plateforme d'analyse de malware automatisée pour extraction d'IoC. (Go, RethinkDB, RabbitMQ, Docker, Cuckoo, VirusTotal, Yara, AngularJS 2)\n- Etude des régroupements de données IoC / IoA / observables. (R, Neo4j, ElasticSearch, Machine learning, Clustering)\n- Plateforme de centralisation d'indicateurs pour analyse sécurité \"Technical Threat Intelligence\". (Go, RabbitMQ, ElasticSearch, Neo4j, AngularJS)\n- Plateforme de centralisation et corrélation des bulletins sécurité. (Go, RabbitMQ, MongoDB, AngularJS)\n- Conception et réalisation d'un système embarqué type \"boîte blanche\" pour décontamination virale. (Go, AngularJS, Qt, ZMQ, Docker)\n- Microservices: email (composition, envoi, signature), identification / autorisation, jetons, licences (Go, gRPC, Consul, Vault, Docker, Rancher)\n- Audit qualité et sécurité. (Java / J2EE)\n- Encadrement stagiaires."
+      },
+      "recency": {
+        "asof_year": 2017,
+        "age_years": 9,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 5,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "31555",
+        "zip_code": "31000",
+        "city_name": "TOULOUSE",
+        "dept_code": "31",
+        "region_name": "MIDI-PYRENEES",
+        "lat": "43.59638143",
+        "lon": "1.43167293"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD17",
+            "label": "Cybersécurité",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.8,
+            "confidence": "high"
+          },
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.55,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0.15,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Ingénieur R&D / Scrum Master",
+        "company_name": "Infotel",
+        "location_raw": "Toulouse - France",
+        "date_start": "January 2010",
+        "date_end": "October 2013",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 1,
+            "line_end": 8
+          }
+        ],
+        "excerpt": "_Ingénieur R&D / Scrum Master January 2010 - October 2013_\n- Plateforme de dépot sécurisé de fichier à haute valeur probante. (RabbitMQ, Protobuf, Scala/AKKA, Java, Spring, ElasticSearch, AngularJS)\n- Conception et réalisation d'un SSO basé sur OAUTH 2.0. (Java, Spring, JWT, PKI, PKCS#11, HOTP)\n- Industrialisation de la chaîne documentaire. (Git, Jenkins, Maven, Docbook5, XSLT, FOP)\n- Revue de code qualité et sécurité. (Java, J2EE)\n- Maintenance de produits. (ClearCase, Java, Struts2, Eclipse RCP, Z/OS)\n- Encadrement stagiaires."
+      },
+      "recency": {
+        "asof_year": 2013,
+        "age_years": 13,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "31555",
+        "zip_code": "31000",
+        "city_name": "TOULOUSE",
+        "dept_code": "31",
+        "region_name": "MIDI-PYRENEES",
+        "lat": "43.59638143",
+        "lon": "1.43167293"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "temporal_mismatch",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD17",
+            "label": "Cybersécurité",
+            "score": 0.7,
+            "confidence": "medium"
+          },
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.65,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.55,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Ingénieur Sécurité",
+        "company_name": "SCASSI Conseil",
+        "location_raw": "Toulouse - France",
+        "date_start": "July 2008",
+        "date_end": "December 2009",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 1,
+            "line_end": 8
+          }
+        ],
+        "excerpt": "_Ingénieur Sécurité July 2008 - December 2009_\n- Conception et réalisation d'un outil d'analyse de risques basé sur la méthodologie EBIOS (SOA, J2EE,.Net)\n- Généralisation des méthodes d'analyse de risques (UML)\n- Audit de code (Java/J2EE, C/C++, PHP)\n- Reverse engineering, analyse de malware\n- SOC (Security Operating Center) auprès d'un grand compte (Gestion des événements sécurité, gestion des requêtes sécurité, maintient en\ncondition opérationnelle)\n- Instructeur pour des ateliers techniques (Virtualisation / Firewall & Contrôles d'accès) auprès d'une vingtaine de personnes"
+      },
+      "recency": {
+        "asof_year": 2009,
+        "age_years": 17,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "31555",
+        "zip_code": "31000",
+        "city_name": "TOULOUSE",
+        "dept_code": "31",
+        "region_name": "MIDI-PYRENEES",
+        "lat": "43.59638143",
+        "lon": "1.43167293"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "481204691",
+        "name": "SCASSI CONSEIL",
+        "sigle": null,
+        "naf": "62.02A",
+        "naf25": "62.20G",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "12",
+          "min": 20,
+          "max": 49,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "31670",
+          "city": "LABEGE",
+          "dept": "31",
+          "region": "76",
+          "lat": "43.541587",
+          "lon": "1.509983"
+        },
+        "matched_establishment": {
+          "siret": "48120469100028",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "62.02A",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "IMMEUBLE PERI SUD ZI DU PALAYS 18 RUE DES COSMONAUTES 31400 TOULOUSE",
+          "zip": "31400",
+          "city": "TOULOUSE",
+          "insee": "31555",
+          "dept": "31",
+          "region": "76",
+          "lat": "43.561787",
+          "lon": "1.495921",
+          "date_creation": "2007-10-29",
+          "date_debut_activite": "2013-07-01",
+          "date_fermeture": "2013-07-01"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 5794731,
+          "resultat_net": 218642
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 20,
+              "max": 49
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD17",
+            "label": "Cybersécurité",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD25",
+            "label": "Formation & Transmission",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD18",
+            "label": "Tech & numérique",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.8,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "Stagiaire - Développeur",
+        "company_name": null,
+        "location_raw": null,
+        "date_start": "October 2007",
+        "date_end": "July 2008",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 1,
+            "line_end": 1
+          }
+        ],
+        "excerpt": null
+      },
+      "recency": {
+        "asof_year": 2008,
+        "age_years": 18,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.8,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "6": {
+      "identity": {
+        "job_title": "Stagiaire - Développeur",
+        "company_name": "Opencube Technologies",
+        "location_raw": "Toulouse - France",
+        "date_start": "March 2007",
+        "date_end": "September 2007",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_6",
+            "line_start": 1,
+            "line_end": 1
+          }
+        ],
+        "excerpt": "_Stagiaire - Développeur March 2007 - September 2007_"
+      },
+      "recency": {
+        "asof_year": 2007,
+        "age_years": 19,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "31555",
+        "zip_code": "31000",
+        "city_name": "TOULOUSE",
+        "dept_code": "31",
+        "region_name": "MIDI-PYRENEES",
+        "lat": "43.59638143",
+        "lon": "1.43167293"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.8,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "7": {
+      "identity": {
+        "job_title": "Stagiaire - Développeur",
+        "company_name": "MEDES IMPS",
+        "location_raw": "Toulouse - France",
+        "date_start": "March 2006",
+        "date_end": "September 2006",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_7",
+            "line_start": 1,
+            "line_end": 1
+          }
+        ],
+        "excerpt": "_Stagiaire - Développeur March 2006 - September 2006_"
+      },
+      "recency": {
+        "asof_year": 2006,
+        "age_years": 20,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "31555",
+        "zip_code": "31000",
+        "city_name": "TOULOUSE",
+        "dept_code": "31",
+        "region_name": "MIDI-PYRENEES",
+        "lat": "43.59638143",
+        "lon": "1.43167293"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "353360415",
+        "name": "MEDES-INST MEDECINE PHYSIOLOGIE SPATIALE",
+        "sigle": "IMPS",
+        "naf": "72.11Z",
+        "naf25": "72.10G",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "12",
+          "min": 20,
+          "max": 49,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "31400",
+          "city": "TOULOUSE",
+          "dept": "31",
+          "region": "76",
+          "lat": "43.558629",
+          "lon": "1.453769"
+        },
+        "matched_establishment": {
+          "siret": "35336041500031",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "72.11Z",
+          "activite_principale_naf25": "72.10G",
+          "tranche_effectif_salarie": {
+            "code": "12",
+            "label": "20-49",
+            "min": 20,
+            "max": 49,
+            "midpoint": 35,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "CHU RANGUEIL 1 AVENUE DU PROFESSEUR JEAN POULHES 31400 TOULOUSE",
+          "zip": "31400",
+          "city": "TOULOUSE",
+          "insee": "31555",
+          "dept": "31",
+          "region": "76",
+          "lat": "43.558629",
+          "lon": "1.453769",
+          "date_creation": "1998-10-06",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "72",
+            "label": "Recherche-développement scientifique"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 20,
+              "max": 49
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.8,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0.05,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "8": {
+      "identity": {
+        "job_title": "Stagiaire - Administrateur Système et Réseau",
+        "company_name": "Karobas",
+        "location_raw": "Sophia Antipolis - France",
+        "date_start": "March 2005",
+        "date_end": "August 2005",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_8",
+            "line_start": 1,
+            "line_end": 1
+          }
+        ],
+        "excerpt": "_Stagiaire - Administrateur Système et Réseau March 2005 - August 2005_"
+      },
+      "recency": {
+        "asof_year": 2005,
+        "age_years": 21,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": null,
+        "zip_code": null,
+        "city_name": "Sophia Antipolis",
+        "dept_code": "06",
+        "region_name": "Provence-Alpes-Côte d'Azur",
+        "lat": null,
+        "lon": null
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "439407479",
+        "name": "KAROBAS",
+        "sigle": null,
+        "naf": "62.01Z",
+        "naf25": null,
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "06560",
+          "city": "VALBONNE",
+          "dept": "06",
+          "region": "93",
+          "lat": "43.619057",
+          "lon": "7.055133"
+        },
+        "matched_establishment": {
+          "siret": "43940747900021",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "72.2C",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "CO CICA 2229 ROUTE DES CRETES 06560 VALBONNE",
+          "zip": "06560",
+          "city": "VALBONNE",
+          "insee": "06152",
+          "dept": "06",
+          "region": "93",
+          "lat": "43.62594",
+          "lon": "7.045527",
+          "date_creation": "2004-02-01",
+          "date_debut_activite": "2005-06-30",
+          "date_fermeture": "2005-06-30"
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "62",
+            "label": "Programmation, conseil et autres activités informatiques"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD16",
+            "label": "Infrastructure & Cloud",
+            "score": 0.85,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "9": {
+      "identity": {
+        "job_title": "Stagiaire - WebMaster",
+        "company_name": "Nice-antiques.com",
+        "location_raw": "Nice - France",
+        "date_start": "March 2004",
+        "date_end": "July 2004",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_9",
+            "line_start": 1,
+            "line_end": 1
+          }
+        ],
+        "excerpt": "_Stagiaire - WebMaster March 2004 - July 2004_"
+      },
+      "recency": {
+        "asof_year": 2004,
+        "age_years": 22,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "06088",
+        "zip_code": "06000",
+        "city_name": "NICE",
+        "dept_code": "06",
+        "region_name": "PROVENCE-ALPES-COTE D'AZUR",
+        "lat": "43.71199927",
+        "lon": "7.23826889"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": false,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0,
+          "individual_contributor": 0.65,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.55
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    }
+  }
+}

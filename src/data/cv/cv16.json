@@ -1,0 +1,336 @@
+{
+  "id": "cv16",
+  "label": "Ingénieur SIG",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Ingénieur SIG (alternance)",
+        "company_name": "ENGIE Lab CRIGEN",
+        "location_raw": "Paris, France",
+        "date_start": "Octobre 2024",
+        "date_end": "Octobre 2025",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 10
+          }
+        ],
+        "excerpt": "ENGIE Lab CRIGEN Paris, France\n_Ingénieur SIG (alternance) Octobre. 2024 - Octobre. 2025_\n- Développement d'applications web SIG interactives via ArcGIS Experience Builder, Dashboards et Story Maps\npour la visualisation d'indicateurs environnementaux et sociaux.\n- Création, gestion et stylisation de couches géographiques (ArcGIS Pro/Enterprise); publication de services,\nstructuration de la base PostgreSQL + ArcSDE.\n- Développement de scripts Python pour automatiser le traitement, la mise en forme et la mise à jour de données\nspatiales et temporelles.\n- Exploration et intégration de sources de données climatiques, environnementales et sociétales pertinentes aux\nprojets R&D.\n- Appui aux utilisateurs internes: support technique, amélioration continue d'outils web et gestion des bugs."
+      },
+      "recency": {
+        "asof_year": 2025,
+        "age_years": 1,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD15",
+            "label": "Data & IA",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Ingénieur GNSS (stage)",
+        "company_name": "TERIA - EXAGONE",
+        "location_raw": "Paris, France",
+        "date_start": "Mai 2024",
+        "date_end": "Septembre 2024",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 5
+          }
+        ],
+        "excerpt": "TERIA - EXAGONE Paris, France\n_Ingénieur GNSS (stage) Mai 2024 - Septembre. 2024_\n- Développement de scripts Python automatisant l'ingestion en temps réel de données GNSS via des flux TCP/IP\n(NTRIP/RTCM), avec des mécanismes de reprise sur erreur pour garantir la continuité et l'intégrité des données.\n- Conception et optimisation de bases de données spatiales PostgreSQL/PostGIS pour stocker les données.\n- Développement d'une API REST fournissant des indicateurs de qualité des stations GNSS situées à proximité de"
+      },
+      "recency": {
+        "asof_year": 2024,
+        "age_years": 2,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "829861855",
+        "name": "SCI TERIA",
+        "sigle": null,
+        "naf": "00.00Z",
+        "naf25": "00.00Y",
+        "section_naf": null,
+        "etat_administratif": "A",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "75017",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.886317",
+          "lon": "2.318454"
+        },
+        "matched_establishment": {
+          "siret": "82986185500015",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "70.10Z",
+          "activite_principale_naf25": "70.10Y",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "63 PLACE DU DOCTEUR FELIX LOBLIGEOIS 75017 PARIS",
+          "zip": "75017",
+          "city": "PARIS",
+          "insee": "75117",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.886317",
+          "lon": "2.318454",
+          "date_creation": "2017-04-18",
+          "date_debut_activite": "2017-04-18",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": null,
+            "label": null
+          },
+          "division": {
+            "code": "00",
+            "label": null
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Ingénieur FTTH / SIG (CDI)",
+        "company_name": "Circet Maroc",
+        "location_raw": "Casablanca, Maroc",
+        "date_start": "Janvier 2020",
+        "date_end": "Août 2023",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 10
+          }
+        ],
+        "excerpt": "Circet Maroc Casablanca, Maroc\n_Ingénieur FTTH / SIG (CDI) Janvier. 2020 - Août 2023_\n- Cartographie les réseaux FTTH sur fond cadastral: saisie, projection, édition et mise en page des plans de\ndéploiement et de réingénierie.\n- Modélisé les infrastructures (chambres, poteaux, boˆıtes, câbles, équipements actifs/passifs) dans des SIG (ArcGIS,\nQGIS, NetGeo), avec organisation des couches thématiques.\n- Intégré, nettoyé et harmonisé des données issues de plans AutoCAD, relevés terrain et bases clients pour générer\ndes bases géospatiales exploitables.\n- Créé et maintenu des bases PostGIS avec structuration des couches réseau pour la consultation, l'analyse spatiale et\nl'édition cartographique.\n- Produit des cartes techniques et thématiques pour les phases d'étude, de déploiement, et de recette des réseaux"
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.85,
+            "confidence": "high"
+          },
+          {
+            "code": "FD18",
+            "label": "Opérations & Exploitation",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    }
+  }
+}

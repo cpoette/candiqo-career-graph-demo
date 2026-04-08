@@ -1,0 +1,877 @@
+{
+  "id": "cv03",
+  "label": " Account Director - POS / PLV",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Responsable pôle sous-traitance",
+        "company_name": "DOUBLET",
+        "location_raw": "Avelin (59)",
+        "date_start": "2024",
+        "date_end": "2025",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 7
+          }
+        ],
+        "excerpt": "2024 - 2025: Responsable pôle sous-traitance | DOUBLET - Avelin (59)\n- Encadrement d'une équipe de 6 personnes composée de chargés de fabrication,\nbureau d'études et approvisionneur.\n- Réorganisation interne: définition des fiches de poste et implémentation de\nnouveaux processus\n- Mise en place de KPI de performance et optimisation des achats (sourcing\nfournisseurs)\n- Amélioration continue: challenge des cahiers des charges clients et propositions"
+      },
+      "recency": {
+        "asof_year": 2025,
+        "age_years": 1,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59034",
+        "zip_code": "59710",
+        "city_name": "AVELIN",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.53978820",
+        "lon": "3.08608434"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "330542325",
+        "name": "DOUBLET",
+        "sigle": null,
+        "naf": "13.92Z",
+        "naf25": "43.24Y",
+        "section_naf": "C",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "22",
+          "min": 100,
+          "max": 199,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "59710",
+          "city": "AVELIN",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.544247",
+          "lon": "3.089222"
+        },
+        "matched_establishment": {
+          "siret": "33054232500015",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "13.92Z",
+          "activite_principale_naf25": "43.24Y",
+          "tranche_effectif_salarie": {
+            "code": "22",
+            "label": "100-199",
+            "min": 100,
+            "max": 199,
+            "midpoint": 150,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "67 RUE DE LILLE 59710 AVELIN",
+          "zip": "59710",
+          "city": "AVELIN",
+          "insee": "59034",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.544247",
+          "lon": "3.089222",
+          "date_creation": "1984-07-23",
+          "date_debut_activite": "2018-12-31",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "C",
+            "label": "Industrie manufacturière"
+          },
+          "division": {
+            "code": "13",
+            "label": "Fabrication de textiles"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 100,
+              "max": 199
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD05",
+            "label": "Conseil & Transformation",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.75,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD10",
+            "label": "Industrie",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.55,
+          "managerial_scope": 0.8,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0.2,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Responsable projet achat PLV",
+        "company_name": "ALTAVIA",
+        "location_raw": "Saint-Ouen (93)",
+        "date_start": "2023",
+        "date_end": "2024",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 6
+          }
+        ],
+        "excerpt": "2023 - 2024: Responsable projet achat PLV | ALTAVIA - Saint-Ouen (93)\n- Pilotage des appels d'offres pour les achats (challenge des cahiers des charges,\noptimisations techniques, propositions de matériaux et finitions éco-responsables)\n- Sourcing, benchmarking, et négociation avec les fournisseurs\n- Accompagnement des BU dans les appels d'offres et participation aux audits RSE\n(ISO 9001)\n- Sensibilisation des équipes via webinars internes sur les enjeux"
+      },
+      "recency": {
+        "asof_year": 2024,
+        "age_years": 2,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "93070",
+        "zip_code": "93400",
+        "city_name": "SAINT-OUEN",
+        "dept_code": "93",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.90980658",
+        "lon": "2.33257042"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "327168332",
+        "name": "ALTAVIA",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": "73.11Y",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "12",
+          "min": 20,
+          "max": 49,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "75007",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.853321",
+          "lon": "2.313465"
+        },
+        "matched_establishment": {
+          "siret": "32716833200051",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "A",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": "73.11Y",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "10 RUE BLANQUI 93400 SAINT-OUEN-SUR-SEINE",
+          "zip": "93400",
+          "city": "SAINT-OUEN-SUR-SEINE",
+          "insee": "93070",
+          "dept": "93",
+          "region": "11",
+          "lat": "48.907153",
+          "lon": "2.339873",
+          "date_creation": "1994-01-01",
+          "date_debut_activite": "2020-03-16",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 634655000,
+          "resultat_net": -2407000
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 20,
+              "max": 49
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD05",
+            "label": "Conseil & Transformation",
+            "score": 0.65,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.25,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0.2,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Directrice du pôle publishing",
+        "company_name": "ALTAVIA",
+        "location_raw": "Lille (59)",
+        "date_start": "2012",
+        "date_end": "2023",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 10
+          }
+        ],
+        "excerpt": "2012 - 2023: Directrice du pôle publishing | ALTAVIA - Lille (59)\n- Membre du CoDir et management de 10 collaborateurs\n- Création et développement du pôle fabrication (recrutement, organisation\nd'équipe)\n- Pilotage des appels d'offres stratégiques, construction des modèles économiques,\n- Gestion des achats de production imprimée (optimisation, négociation,\nmassification) - budget de 10M€\n- Implémentation des comptes client et mise en place des process et KPI (Nocibé,\nMc Donald's, Promod …)\n- Développement commercial et relation clients/fournisseurs, notamment sur les\nmarques de cosmétiques (Clarins, Laboratoires Filorga, Dior)"
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 12,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59350",
+        "zip_code": "59000",
+        "city_name": "LILLE",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.63171832",
+        "lon": "3.04783272"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "334862901",
+        "name": "ALTAVIA LILLE",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": null,
+        "section_naf": "M",
+        "etat_administratif": "C",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "59000",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634951",
+          "lon": "3.069529"
+        },
+        "matched_establishment": {
+          "siret": "33486290100025",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "23 RUE DU MOLINEL - LILLE 59000 LILLE",
+          "zip": "59000",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.635085",
+          "lon": "3.069789",
+          "date_creation": "1989-08-11",
+          "date_debut_activite": "2016-09-30",
+          "date_fermeture": "2016-09-30"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2021,
+          "ca": 9221365,
+          "resultat_net": -596110
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": true,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD01",
+            "label": "Direction & Stratégie",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.85,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.55,
+          "managerial_scope": 1,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 1,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Chef de projet",
+        "company_name": "I.M.S. RETAIL AGILITY",
+        "location_raw": "Pérenchies (59)",
+        "date_start": "2005",
+        "date_end": "2012",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "2005 - 2012: Chef de projet | I.M.S. RETAIL AGILITY - Pérenchies (59)\n- Analyse des faisabilités techniques sur base des pistes créatives clients (Nocibé,\nOrangina, Bridgestone, Go Sport…)\n- Sourcing et bench fournisseur, négociation\n- Gestion et suivi de la production, interface entre les clients/fournisseurs"
+      },
+      "recency": {
+        "asof_year": 2012,
+        "age_years": 14,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 8,
+        "weight": 1
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59457",
+        "zip_code": "59840",
+        "city_name": "PERENCHIES",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.67008137",
+        "lon": "2.96867396"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "420075640",
+        "name": "ALTAVIA WETAIL",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": "73.11Y",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "59800",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634951",
+          "lon": "3.069529"
+        },
+        "matched_establishment": {
+          "siret": "42007564000060",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "ZA DU BOIS 4 RUE DU TILLEUL 59840 PERENCHIES",
+          "zip": "59840",
+          "city": "PERENCHIES",
+          "insee": "59457",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.660984",
+          "lon": "2.974694",
+          "date_creation": "2007-05-07",
+          "date_debut_activite": "2021-04-01",
+          "date_fermeture": "2021-04-01"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 45698249,
+          "resultat_net": 1464783
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.25,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "Fabricante",
+        "company_name": "FAÇONNAGE MERCURE",
+        "location_raw": "Roubaix (59)",
+        "date_start": "2002",
+        "date_end": "2005",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 0,
+            "line_end": 3
+          }
+        ],
+        "excerpt": "2002 - 2005: Fabricante | FAÇONNAGE MERCURE - Roubaix (59)\n- Élaboration des dossiers techniques pour l'atelier de production (plieuses/piqueuse)\n- Suivi de fabrication jusqu'à la facturation"
+      },
+      "recency": {
+        "asof_year": 2005,
+        "age_years": 21,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "59512",
+        "zip_code": "59100",
+        "city_name": "ROUBAIX",
+        "dept_code": "59",
+        "region_name": "NORD-PAS-DE-CALAIS",
+        "lat": "50.68797748",
+        "lon": "3.18258435"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "326420007",
+        "name": "FACONNAGE MERCURE",
+        "sigle": null,
+        "naf": "18.14Z",
+        "naf25": null,
+        "section_naf": "C",
+        "etat_administratif": "A",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "59100",
+          "city": "ROUBAIX",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.703959",
+          "lon": "3.180755"
+        },
+        "matched_establishment": {
+          "siret": "32642000700022",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "18.14Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "101-2 101 BOULEVARD DE METZ 59100 ROUBAIX",
+          "zip": "59100",
+          "city": "ROUBAIX",
+          "insee": "59512",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.703959",
+          "lon": "3.180755",
+          "date_creation": "1986-06-02",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": "2007-11-09"
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "C",
+            "label": "Industrie manufacturière"
+          },
+          "division": {
+            "code": "18",
+            "label": "Imprimerie et reproduction d'enregistrements"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD20",
+            "label": "Production & Fabrication",
+            "score": 0.95,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD10",
+            "label": "Industrie",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    }
+  }
+}

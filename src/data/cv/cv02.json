@@ -1,0 +1,759 @@
+{
+  "id": "cv02",
+  "label": "Senior Account Manager - POS / PLV",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "Responsable pôle sous-traitance",
+        "company_name": null,
+        "location_raw": null,
+        "date_start": "Janvier 2024",
+        "date_end": "Avril 2025",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 0,
+            "line_end": 10
+          }
+        ],
+        "excerpt": "Janvier 2024 - Avril 2025: Responsable pôle sous-traitance |\nDOUBLET\nEncadrement d'une équipe de 6 personnes composée de chargés\nde fabrication, bureau d'études et approvisionneur.\n- Réorganisation interne: définition des fiches de poste et\nimplémentation de nouveaux processus\n- Mise en place de KPI de performance et optimisation des\nachats (sourcing fournisseurs)\n- Amélioration continue: challenge des cahiers des charges\nclients et propositions d'axes d'amélioration des process\n(commerce, finance, logistique)"
+      },
+      "recency": {
+        "asof_year": 2025,
+        "age_years": 1,
+        "weight": 1
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.55,
+          "managerial_scope": 0.75,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0.2,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 1
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "Responsable projet achat PLV",
+        "company_name": "ALTAVIA GROUP",
+        "location_raw": null,
+        "date_start": "Mars 2023",
+        "date_end": "Janvier 2024",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 0,
+            "line_end": 8
+          }
+        ],
+        "excerpt": "Mars 2023 - Janvier 2024: Responsable projet achat PLV |\nALTAVIA GROUP\n- Pilotage des appels d'offres pour les achats (challenge des\ncahiers des charges, optimisations techniques, propositions\nde matériaux et finitions éco-responsables)\n- Sourcing, benchmarking, et négociation avec les fournisseurs\n- Accompagnement des BU dans les appels d'offres et\nparticipation aux audits RSE (ISO 9001)\n- Sensibilisation des équipes via webinars internes sur les"
+      },
+      "recency": {
+        "asof_year": 2024,
+        "age_years": 2,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "327168332",
+        "name": "ALTAVIA",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": "73.11Y",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "12",
+          "min": 20,
+          "max": 49,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "75007",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.853321",
+          "lon": "2.313465"
+        },
+        "matched_establishment": {
+          "siret": "32716833200051",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "A",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": "73.11Y",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "10 RUE BLANQUI 93400 SAINT-OUEN-SUR-SEINE",
+          "zip": "93400",
+          "city": "SAINT-OUEN-SUR-SEINE",
+          "insee": "93070",
+          "dept": "93",
+          "region": "11",
+          "lat": "48.907153",
+          "lon": "2.339873",
+          "date_creation": "1994-01-01",
+          "date_debut_activite": "2020-03-16",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 634655000,
+          "resultat_net": -2407000
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 20,
+              "max": 49
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD21",
+            "label": "Qualité & Amélioration continue",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.25,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "Directrice du pôle publishing",
+        "company_name": "ALTAVIA LILLE",
+        "location_raw": null,
+        "date_start": "Octobre 2012",
+        "date_end": "Mars 2023",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 0,
+            "line_end": 12
+          }
+        ],
+        "excerpt": "Octobre 2012 - Mars 2023: Directrice du pôle publishing |\nALTAVIA LILLE\n- Membre du CoDir et management de 10 collaborateurs\n- Création et développement du pôle fabrication (recrutement,\norganisation d'équipe)\n- Pilotage des appels d'offres stratégiques, construction du\nmodèles économiques,\n- Gestion des achats de production imprimée (optimisation,\nnégociation, massification) avec un budget de 10M€\n- Implémentation des comptes client et mise en place des\nprocess et KPI (Nocibé, Mc Donald's, Promod …)\n- Développement commercial et relation clients/fournisseurs,\nnotamment sur les marques de cosmétiques"
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 12,
+        "weight": 1
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "334862901",
+        "name": "ALTAVIA LILLE",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": null,
+        "section_naf": "M",
+        "etat_administratif": "C",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "59000",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634951",
+          "lon": "3.069529"
+        },
+        "matched_establishment": {
+          "siret": "33486290100025",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "23 RUE DU MOLINEL - LILLE 59000 LILLE",
+          "zip": "59000",
+          "city": "LILLE",
+          "insee": "59350",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.635085",
+          "lon": "3.069789",
+          "date_creation": "1989-08-11",
+          "date_debut_activite": "2016-09-30",
+          "date_fermeture": "2016-09-30"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2021,
+          "ca": 9221365,
+          "resultat_net": -596110
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": true,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD01",
+            "label": "Direction & Stratégie",
+            "score": 0.95,
+            "confidence": "high"
+          },
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.8,
+            "confidence": "high"
+          },
+          {
+            "code": "FD10",
+            "label": "Vente & Business Dev",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.55,
+          "managerial_scope": 1,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 1,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "Chef de projet",
+        "company_name": "I.M.S. RETAIL AGILITY",
+        "location_raw": null,
+        "date_start": "Mars 2005",
+        "date_end": "Octobre 2012",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 0,
+            "line_end": 7
+          }
+        ],
+        "excerpt": "Mars 2005 - Octobre 2012: Chef de projet | I.M.S. RETAIL\nAGILITY\n- Analyse des faisabilités techniques sur base des pistes\ncréatives clients (Nocibé, Orangina, Bridgestone, Go Sport…)\n- Sourcing et bench fournisseur, négociation\n- Gestion et suivi de la production, interface entre les clients et\nles acteurs de la chaîne graphique (plv multi matériaux,\nmobilier, print feuille)"
+      },
+      "recency": {
+        "asof_year": 2012,
+        "age_years": 14,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 8,
+        "weight": 1
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "420075640",
+        "name": "ALTAVIA WETAIL",
+        "sigle": null,
+        "naf": "73.11Z",
+        "naf25": "73.11Y",
+        "section_naf": "M",
+        "etat_administratif": "A",
+        "categorie_entreprise": "ETI",
+        "tranche_effectif": {
+          "code": "21",
+          "min": 50,
+          "max": 99,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "59800",
+          "city": "LILLE",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.634951",
+          "lon": "3.069529"
+        },
+        "matched_establishment": {
+          "siret": "42007564000060",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "73.11Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "ZA DU BOIS 4 RUE DU TILLEUL 59840 PERENCHIES",
+          "zip": "59840",
+          "city": "PERENCHIES",
+          "insee": "59457",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.660984",
+          "lon": "2.974694",
+          "date_creation": "2007-05-07",
+          "date_debut_activite": "2021-04-01",
+          "date_fermeture": "2021-04-01"
+        },
+        "group_hints": [],
+        "finance": {
+          "year": 2024,
+          "ca": 45698249,
+          "resultat_net": 1464783
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "M",
+            "label": "Activités spécialisées scientifiques et techniques"
+          },
+          "division": {
+            "code": "73",
+            "label": "Publicité et études de marché"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 50,
+              "max": 99
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "ETI",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "conflict_keep_entity",
+            "confidence": 0.65
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD23",
+            "label": "Gestion de projet & Programme",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD03",
+            "label": "Achats & Procurement",
+            "score": 0.7,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD20",
+            "label": "Services aux entreprises",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.8,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "Fabricante",
+        "company_name": "FAÇONNAGE MERCURE",
+        "location_raw": null,
+        "date_start": "Juillet 2002",
+        "date_end": "Mars 2005",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 0,
+            "line_end": 4
+          }
+        ],
+        "excerpt": "Juillet 2002 à Mars 2005: Fabricante | FAÇONNAGE\nMERCURE\n- Élaboration des dossiers techniques pour l'atelier\n- Suivi de fabrication jusqu'à la facturation\n- Remplacement du chef de fab, du responsable expédition et"
+      },
+      "recency": {
+        "asof_year": 2005,
+        "age_years": 21,
+        "weight": 0.25
+      },
+      "duration": {
+        "years_estimate": 4,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "unresolved"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "326420007",
+        "name": "FACONNAGE MERCURE",
+        "sigle": null,
+        "naf": "18.14Z",
+        "naf25": null,
+        "section_naf": "C",
+        "etat_administratif": "A",
+        "categorie_entreprise": null,
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "59100",
+          "city": "ROUBAIX",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.703959",
+          "lon": "3.180755"
+        },
+        "matched_establishment": {
+          "siret": "32642000700022",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "F",
+          "activite_principale": "18.14Z",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "101-2 101 BOULEVARD DE METZ 59100 ROUBAIX",
+          "zip": "59100",
+          "city": "ROUBAIX",
+          "insee": "59512",
+          "dept": "59",
+          "region": "32",
+          "lat": "50.703959",
+          "lon": "3.180755",
+          "date_creation": "1986-06-02",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": "2007-11-09"
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "C",
+            "label": "Industrie manufacturière"
+          },
+          "division": {
+            "code": "18",
+            "label": "Imprimerie et reproduction d'enregistrements"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "unknown",
+          "size_entity": null,
+          "size_declared": null,
+          "size_context": {
+            "segment": "unknown",
+            "reason": "insufficient_data",
+            "confidence": 0.5
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD19",
+            "label": "Supply chain & Logistique",
+            "score": 0.85,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD10",
+            "label": "Industrie",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.25
+        }
+      }
+    }
+  }
+}

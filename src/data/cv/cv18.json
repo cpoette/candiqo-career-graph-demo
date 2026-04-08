@@ -1,0 +1,1042 @@
+{
+  "id": "cv18",
+  "label": "Développeur Backend",
+  "xp_enrichment_by_id": {
+    "1": {
+      "identity": {
+        "job_title": "TECH LEAD",
+        "company_name": "LearnEnjoy (Entreprise solidaire d'utilité sociale)",
+        "location_raw": "Paris, France",
+        "date_start": "Janv. 2023",
+        "date_end": "Mars 2024",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_1",
+            "line_start": 1,
+            "line_end": 8
+          }
+        ],
+        "excerpt": "TECH LEAD _Janv. 2023 - Mars 2024_\n- Référent technique au sein de l'entreprise, membre du comité de direction.\n- Projet \"Bien à l'École\": conception et réalisation d'applications pédagogiques avec nos partenaires de l'EdTech.\n- Intéropérabilité: mise à disposition des applications pédagogiques via la norme LTI.\n- Co-construction de features et de la roadmap avec la nouvelle équipe produit. SCRUM mastering.\n- Recrutement et mentoring au sein d'une équipe full stack de 6 personnes.\n- Stack technique: Ruby on Rails, Flutter, ExpressJS, Bash, MySQL, Elastic, Redis, Linux, Vagrant, Ansible."
+      },
+      "recency": {
+        "asof_year": 2024,
+        "age_years": 2,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "537519027",
+        "name": "LEARNENJOY",
+        "sigle": null,
+        "naf": "58.29C",
+        "naf25": "58.29Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "11",
+          "min": 10,
+          "max": 19,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "75001",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.866075",
+          "lon": "2.329477"
+        },
+        "matched_establishment": {
+          "siret": "53751902700032",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "58.29C",
+          "activite_principale_naf25": "58.29Y",
+          "tranche_effectif_salarie": {
+            "code": "11",
+            "label": "10-19",
+            "min": 10,
+            "max": 19,
+            "midpoint": 15,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "229 RUE SAINT-HONORE 75001 PARIS",
+          "zip": "75001",
+          "city": "PARIS",
+          "insee": "75101",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.866075",
+          "lon": "2.329477",
+          "date_creation": "2023-06-28",
+          "date_debut_activite": "2023-06-28",
+          "date_fermeture": null
+        },
+        "group_hints": ["Entreprise solidaire d'utilité sociale"],
+        "finance": {
+          "year": 2024,
+          "ca": 667568,
+          "resultat_net": -41336
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "58",
+            "label": "Édition"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 10,
+              "max": 19
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD01",
+            "label": "Direction & Stratégie",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.7,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD06",
+            "label": "Média, édition & contenu",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 1,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.8,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0.45,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "2": {
+      "identity": {
+        "job_title": "LEAD DEVELOPER",
+        "company_name": "Believe Music",
+        "location_raw": "Paris, France",
+        "date_start": "Juin 2020",
+        "date_end": "Déc. 2021",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_3",
+            "line_start": 1,
+            "line_end": 8
+          }
+        ],
+        "excerpt": "LEAD DEVELOPER _Juin 2020 - Déc. 2021_\n- Référent technique de \"Data Music\", web-app utilisée par les artistes et label managers pour la consultation de données d'écoute.\n- Étude, rétro-documentation, maintenance et évolution de l'application existante.\n- Transformation pas à pas d'un système monolithique en une architecture micro-services (API, BFF, micro-apps).\n- Co-construction de features et d'une roadmap associée avec le produit.\n- Recrutement et mentoring au sein d'une équipe full stack de 9 personnes.\n- Stack technique: PHP, MariaDB, SvelteJS, Java, Docker."
+      },
+      "recency": {
+        "asof_year": 2021,
+        "age_years": 5,
+        "weight": 0.7
+      },
+      "duration": {
+        "years_estimate": 2,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "305207672",
+        "name": "GIEEPA - GIE EDITION PHONOGRAPHIQUE",
+        "sigle": "GIEEPA",
+        "naf": "59.20Z",
+        "naf25": "59.20Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "92200",
+          "city": "NEUILLY-SUR-SEINE",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.887743",
+          "lon": "2.257466"
+        },
+        "matched_establishment": {
+          "siret": "30520767200034",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "59.20Z",
+          "activite_principale_naf25": "59.20Y",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "1 RUE DE COURCELLES 75008 PARIS",
+          "zip": "75008",
+          "city": "PARIS",
+          "insee": "75108",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.873198",
+          "lon": "2.311273",
+          "date_creation": "1900-01-01",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "59",
+            "label": "Production de films cinématographiques, de vidéo et de programmes de télévision ; enregistrement sonore et édition musicale"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": null,
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "declared_only",
+            "confidence": 0.6
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": true,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": true,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD12",
+            "label": "Produit",
+            "score": 0.6,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD06",
+            "label": "Média, édition & contenu",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.8,
+          "individual_contributor": 0.35000000000000003,
+          "managerial_scope": 0.6000000000000001,
+          "cross_functional_scope": 0.7
+        },
+        "level": {
+          "strategic_scope": 0.65,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.7
+        }
+      }
+    },
+    "3": {
+      "identity": {
+        "job_title": "DÉVELOPPEUR BACKEND / DEVOPS",
+        "company_name": "LearnEnjoy (Entreprise solidaire d'utilité sociale)",
+        "location_raw": "Paris, France",
+        "date_start": "Déc. 2021",
+        "date_end": "Janv. 2023",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_2",
+            "line_start": 1,
+            "line_end": 5
+          }
+        ],
+        "excerpt": "- Évolutions et maintenance du backoffice destiné aux enseignants, professionnels de santé, et chefs d'établissement.\n- Intéropérabilité: mise à disposition des applications pédagogiques sur le catalogue de l'Éducation Nationale via le portail GAR.\n- Maintenance des serveurs et machines virtuelles de développement.\n- Stack technique: Ruby on Rails, ExpressJS, Bash, MySQL, Elastic, Redis, Linux, Vagrant."
+      },
+      "recency": {
+        "asof_year": 2023,
+        "age_years": 3,
+        "weight": 0.85
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "537519027",
+        "name": "LEARNENJOY",
+        "sigle": null,
+        "naf": "58.29C",
+        "naf25": "58.29Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "11",
+          "min": 10,
+          "max": 19,
+          "segment": "PME"
+        },
+        "hq": {
+          "zip": "75001",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.866075",
+          "lon": "2.329477"
+        },
+        "matched_establishment": {
+          "siret": "53751902700032",
+          "is_hq": true,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "58.29C",
+          "activite_principale_naf25": "58.29Y",
+          "tranche_effectif_salarie": {
+            "code": "11",
+            "label": "10-19",
+            "min": 10,
+            "max": 19,
+            "midpoint": 15,
+            "segment": "PME"
+          },
+          "annee_tranche_effectif_salarie": "2023",
+          "address": "229 RUE SAINT-HONORE 75001 PARIS",
+          "zip": "75001",
+          "city": "PARIS",
+          "insee": "75101",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.866075",
+          "lon": "2.329477",
+          "date_creation": "2023-06-28",
+          "date_debut_activite": "2023-06-28",
+          "date_fermeture": null
+        },
+        "group_hints": ["Entreprise solidaire d'utilité sociale"],
+        "finance": {
+          "year": 2024,
+          "ca": 667568,
+          "resultat_net": -41336
+        },
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "58",
+            "label": "Édition"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": {
+            "segment": "PME",
+            "employees": {
+              "min": 10,
+              "max": 19
+            },
+            "source": "tranche_effectif"
+          },
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "consistent",
+            "confidence": 0.85
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD16",
+            "label": "Infrastructure & Cloud",
+            "score": 0.5,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD06",
+            "label": "Média, édition & contenu",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.25,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.85
+        }
+      }
+    },
+    "4": {
+      "identity": {
+        "job_title": "DÉVELOPPEUR BACKEND",
+        "company_name": "Believe Music",
+        "location_raw": "Paris, France",
+        "date_start": "Oct. 2018",
+        "date_end": "Juin 2020",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_4",
+            "line_start": 1,
+            "line_end": 5
+          }
+        ],
+        "excerpt": "- Évolutions et maintenance d'un pipeline d'ingestion Big data (+ de 500M de lignes par jour).\n- Transformation du système existant inadapté en un ETL cloud (AWS / Azure).\n- Construction d'APIs permettant l'interaction entre ancien et nouveau système.\n- Stack technique: PHP, Bash, MariaDB, AWS (Lambda, S3, SQS), Azure (Synapse), Airflow."
+      },
+      "recency": {
+        "asof_year": 2020,
+        "age_years": 6,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "305207672",
+        "name": "GIEEPA - GIE EDITION PHONOGRAPHIQUE",
+        "sigle": "GIEEPA",
+        "naf": "59.20Z",
+        "naf25": "59.20Y",
+        "section_naf": "J",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "92200",
+          "city": "NEUILLY-SUR-SEINE",
+          "dept": "92",
+          "region": "11",
+          "lat": "48.887743",
+          "lon": "2.257466"
+        },
+        "matched_establishment": {
+          "siret": "30520767200034",
+          "is_hq": false,
+          "ancien_siege": false,
+          "etat_administratif": "A",
+          "activite_principale": "59.20Z",
+          "activite_principale_naf25": "59.20Y",
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "1 RUE DE COURCELLES 75008 PARIS",
+          "zip": "75008",
+          "city": "PARIS",
+          "insee": "75108",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.873198",
+          "lon": "2.311273",
+          "date_creation": "1900-01-01",
+          "date_debut_activite": "2008-01-01",
+          "date_fermeture": null
+        },
+        "group_hints": [],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "J",
+            "label": "Information et communication"
+          },
+          "division": {
+            "code": "59",
+            "label": "Production de films cinématographiques, de vidéo et de programmes de télévision ; enregistrement sonore et édition musicale"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "entity",
+          "size_entity": null,
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "declared_only",
+            "confidence": 0.6
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": true,
+        "transformation_signal": true,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": true
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD16",
+            "label": "Infrastructure & Cloud",
+            "score": 0.7,
+            "confidence": "high"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD06",
+            "label": "Média, édition & contenu",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 1,
+          "managerial_scope": 0.05,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0.35,
+          "execution_scope": 1
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "5": {
+      "identity": {
+        "job_title": "DÉVELOPPEUR BACKEND / DEVOPS",
+        "company_name": "Sikana Education (ONG)",
+        "location_raw": "Paris, France",
+        "date_start": "Janv. 2016",
+        "date_end": "Mai 2018",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_5",
+            "line_start": 1,
+            "line_end": 7
+          }
+        ],
+        "excerpt": "DÉVELOPPEUR BACKEND / DEVOPS _Janv. 2016 - Mai 2018_\n- Développement de sikana.tv, une plateforme diffusant gratuitement des vidéos pédagogiques disponibles en 10 langues.\n- Développement de factory.sikana.tv, une plateforme collaborative où les bénévoles traduisent et sous-titrent les vidéos.\n- Administration des machines virtuelles, intégration continue et déploiement. Automatisation de tâches pour la production vidéo.\n- Partenariats techniques avec d'autres ONG internationales (Learning Equality, BSF) pour rendre le contenu accessible hors-ligne.\n- Stack technique: PHP (Symfony 2), Python, MariaDB, Vagrant, Puppet, Git, Capistrano, Jenkins."
+      },
+      "recency": {
+        "asof_year": 2018,
+        "age_years": 8,
+        "weight": 0.5
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "75056",
+        "zip_code": "75000",
+        "city_name": "PARIS",
+        "dept_code": "75",
+        "region_name": "ILE-DE-FRANCE",
+        "lat": "48.85660000",
+        "lon": "2.35220000"
+      },
+      "company": {
+        "status": "resolved",
+        "siren": "812661510",
+        "name": "SIKANA EDUCATION",
+        "sigle": null,
+        "naf": "85.59B",
+        "naf25": "85.59H",
+        "section_naf": "P",
+        "etat_administratif": "A",
+        "categorie_entreprise": "PME",
+        "tranche_effectif": {
+          "code": "NN",
+          "min": null,
+          "max": null,
+          "segment": "unknown"
+        },
+        "hq": {
+          "zip": "75010",
+          "city": "PARIS",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.877564",
+          "lon": "2.349977"
+        },
+        "matched_establishment": {
+          "siret": "81266151000014",
+          "is_hq": false,
+          "ancien_siege": true,
+          "etat_administratif": "F",
+          "activite_principale": "85.59B",
+          "activite_principale_naf25": null,
+          "tranche_effectif_salarie": {
+            "code": "NN",
+            "label": "Non Employeur",
+            "min": null,
+            "max": null,
+            "midpoint": null,
+            "segment": "unknown"
+          },
+          "annee_tranche_effectif_salarie": null,
+          "address": "33 RUE DE L'AMIRAL MOUCHEZ 75013 PARIS",
+          "zip": "75013",
+          "city": "PARIS",
+          "insee": "75113",
+          "dept": "75",
+          "region": "11",
+          "lat": "48.823917",
+          "lon": "2.341588",
+          "date_creation": "2014-06-12",
+          "date_debut_activite": "2018-03-01",
+          "date_fermeture": "2018-03-01"
+        },
+        "group_hints": ["ONG"],
+        "finance": null,
+        "industry": {
+          "source": "naf_rev2",
+          "section": {
+            "code": "P",
+            "label": "Enseignement"
+          },
+          "division": {
+            "code": "85",
+            "label": "Enseignement"
+          }
+        },
+        "org": {
+          "type": "company",
+          "scope": "group",
+          "size_entity": null,
+          "size_declared": {
+            "segment": "PME",
+            "source": "categorie_entreprise"
+          },
+          "size_context": {
+            "segment": "PME",
+            "reason": "declared_only",
+            "confidence": 0.7
+          }
+        }
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": true,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          },
+          {
+            "code": "FD18",
+            "label": "Opérations & Exploitation",
+            "score": 0.5,
+            "confidence": "medium"
+          }
+        ],
+        "context": [
+          {
+            "code": "CD13",
+            "label": "Éducation & recherche",
+            "score": 1,
+            "source": "naf"
+          }
+        ]
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.25,
+          "cross_functional_scope": 1
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.5
+        }
+      }
+    },
+    "6": {
+      "identity": {
+        "job_title": "CONCEPTEUR / DÉVELOPPEUR",
+        "company_name": "GFI Informatique",
+        "location_raw": "Orléans, France",
+        "date_start": "Sept. 2015",
+        "date_end": "Déc. 2015",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_6",
+            "line_start": 1,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "CONCEPTEUR / DÉVELOPPEUR _Sept. 2015 - Déc. 2015_\n- Conception et développement d'applications PHP pour les clients Thalès Air Systems et GLI Biométrie."
+      },
+      "recency": {
+        "asof_year": 2015,
+        "age_years": 11,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 1,
+        "weight": 0.7
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "45234",
+        "zip_code": "45000",
+        "city_name": "ORLEANS",
+        "dept_code": "45",
+        "region_name": "CENTRE",
+        "lat": "47.88286342",
+        "lon": "1.91610357"
+      },
+      "company": {
+        "status": "skipped",
+        "skipped_reason": "temporal_mismatch",
+        "group_hints": []
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": true,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.5,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0.2,
+          "cross_functional_scope": 0.3
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    },
+    "7": {
+      "identity": {
+        "job_title": "DÉVELOPPEUR WEB (EN APPRENTISSAGE, PUIS EN CDI)",
+        "company_name": "Easyflyer (groupe Cimpress)",
+        "location_raw": "Orléans, France",
+        "date_start": "Nov. 2013",
+        "date_end": "Août 2015",
+        "is_current": false
+      },
+      "source": {
+        "spans": [
+          {
+            "candidate_id": "cand_7",
+            "line_start": 1,
+            "line_end": 2
+          }
+        ],
+        "excerpt": "DÉVELOPPEUR WEB (EN APPRENTISSAGE, PUIS EN CDI) _Nov. 2013 - Août 2015_\n- Développement des sites commerçants easyflyer.fr, invite1chef.com et kwikydeco.com sur le framework Magento."
+      },
+      "recency": {
+        "asof_year": 2015,
+        "age_years": 11,
+        "weight": 0.35
+      },
+      "duration": {
+        "years_estimate": 3,
+        "weight": 0.85
+      },
+      "geo": {
+        "status": "resolved",
+        "insee_code": "45234",
+        "zip_code": "45000",
+        "city_name": "ORLEANS",
+        "dept_code": "45",
+        "region_name": "CENTRE",
+        "lat": "47.88286342",
+        "lon": "1.91610357"
+      },
+      "company": {
+        "status": "unresolved",
+        "skipped_reason": null,
+        "group_hints": ["groupe Cimpress"]
+      },
+      "evidence_flags": {
+        "team_management": false,
+        "budget_ownership": false,
+        "cross_functional_collaboration": false,
+        "strategy_signal": false,
+        "execution_signal": true,
+        "ownership_signal": true,
+        "metrics_present": false,
+        "transformation_signal": false,
+        "client_or_stakeholder_scope": false,
+        "scale_scope": false
+      },
+      "domains": {
+        "functional": [
+          {
+            "code": "FD14",
+            "label": "Développement logiciel",
+            "score": 0.9,
+            "confidence": "high"
+          }
+        ],
+        "context": []
+      },
+      "signals": {
+        "posture": {
+          "leadership": 0.3,
+          "individual_contributor": 0.8,
+          "managerial_scope": 0,
+          "cross_functional_scope": 0
+        },
+        "level": {
+          "strategic_scope": 0,
+          "execution_scope": 0.75
+        },
+        "dynamics": {
+          "recent_relevance": 0.35
+        }
+      }
+    }
+  }
+}
