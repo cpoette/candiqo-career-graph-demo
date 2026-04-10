@@ -973,7 +973,7 @@ export function getDotRadius(item) {
   const duration = clamp01(item?.duration?.weight ?? 0);
   const relevance = clamp01(item?.signals?.dynamics?.recent_relevance ?? 0);
 
-  const weight = recency * 0.4 + duration * 0.35 + relevance * 0.25;
+  const weight = recency * 0.35 + duration * 0.4 + relevance * 0.25;
   return 4 + weight * 6;
 }
 

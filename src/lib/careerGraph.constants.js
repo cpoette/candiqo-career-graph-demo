@@ -1,5 +1,5 @@
 export const SPEC = {
-  topPadding: 32,
+  topPadding: 48,
   bottomPadding: 40,
   timelineX: 32,
   yearWidth: 320,

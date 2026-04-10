@@ -23,13 +23,13 @@ import DomainPill from "./DomainPill";
 
 const TOPBAR_HEIGHT = 48;
 const HEADER_HEIGHT = 130;
-const VIEWPORT_TOP_GAP = 16;
+const VIEWPORT_TOP_GAP = 64;
 const VIEWPORT_BOTTOM_GAP = 64;
 
 const FD_SPACING = GAP;
 const CLUSTER_GAP = 232;
 const CLUSTER_INTERNAL_SPACING = 52;
-const FD_TOP_PADDING = 72;
+const FD_TOP_PADDING = 120;
 const FD_BOTTOM_PADDING = 72;
 const DOMAIN_RIGHT_PADDING = 80;
 

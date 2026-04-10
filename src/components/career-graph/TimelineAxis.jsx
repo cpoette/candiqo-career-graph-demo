@@ -56,56 +56,51 @@ export default function TimelineAxis({
             Number.isFinite(t?.midY),
         )
         .map((t) => {
-          const iconX = t.x - 16;
+          const iconX = t.x;
           const iconY = t.midY;
+
+          let Icon = null;
+          let strokeWidth = 1.8;
+
+          if (t.type === "pivot") {
+            Icon = GitBranch;
+            strokeWidth = 2;
+          } else if (t.type === "break") {
+            Icon = Pause;
+            strokeWidth = 1.7;
+          } else if (t.type === "rise") {
+            Icon = ArrowUpRight;
+            strokeWidth = 1.7;
+          }
+
+          if (!Icon) return null;
+
+          const CARTOUCHE_SIZE = 30;
+          const ICON_SIZE = 14;
 
           return (
             <g key={`${t.fromXpId}-${t.toXpId}`}>
-              {/* ligne */}
-              <line
-                x1={t.x}
-                x2={t.x}
-                y1={t.y1}
-                y2={t.y2}
-                stroke="url(#trajectoryGradient)"
-                strokeWidth="3"
-                opacity="0.5"
-                strokeDasharray={t.type === "break" ? "6 8" : undefined}
+              {/* Cartouche centré sur la timeline */}
+              <circle
+                cx={iconX}
+                cy={iconY}
+                r={CARTOUCHE_SIZE / 2}
+                fill="white"
+                stroke="#e5e5e8"
+                strokeWidth="1"
               />
 
-              {/* ICONS */}
-              {t.type === "pivot" && (
-                <foreignObject
-                  x={iconX - 6}
-                  y={iconY - 6}
-                  width={16}
-                  height={16}
-                >
-                  <GitBranch size={16} strokeWidth={2.2} />
-                </foreignObject>
-              )}
-
-              {t.type === "break" && (
-                <foreignObject
-                  x={iconX - 6}
-                  y={iconY - 6}
-                  width={16}
-                  height={16}
-                >
-                  <Pause size={16} strokeWidth={1.6} />
-                </foreignObject>
-              )}
-
-              {t.type === "rise" && (
-                <foreignObject
-                  x={iconX - 6}
-                  y={iconY - 6}
-                  width={16}
-                  height={16}
-                >
-                  <ArrowUpRight size={16} strokeWidth={1.6} />
-                </foreignObject>
-              )}
+              {/* Icône */}
+              <foreignObject
+                x={iconX - ICON_SIZE / 2}
+                y={iconY - ICON_SIZE / 2}
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+              >
+                <div className="flex h-full w-full items-center justify-center text-zinc-500">
+                  <Icon size={ICON_SIZE} strokeWidth={strokeWidth} />
+                </div>
+              </foreignObject>
             </g>
           );
         })}
