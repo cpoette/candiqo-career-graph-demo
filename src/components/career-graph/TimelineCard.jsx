@@ -5,6 +5,7 @@ import {
   getDateRangeLabel,
   getLocationLabel,
 } from "@/lib/careerGraph.formatters";
+import { CD_ICON_MAP } from "@/lib/cd.icons";
 
 export default function TimelineCard({
   item,
@@ -16,11 +17,13 @@ export default function TimelineCard({
   onClick,
 }) {
   const offsetX = getLaneOffsetX(lane);
+  const cdCode = item?.domains?.context?.[0]?.code || item?.company?.cd || null;
+  const Icon = cdCode ? CD_ICON_MAP[cdCode] : null; // ou item.company.cd etc
 
   return (
     <button
       type="button"
-      className={`absolute border rounded-[12px] px-4 py-3 shadow-sm transition-all duration-200 text-left ${
+      className={`absolute border rounded-[12px] px-4 py-3 cursor-pointer shadow-sm transition-all duration-200 text-left ${
         isActive
           ? "border-violet-300 bg-violet-50/40 shadow-md"
           : "border-zinc-300 bg-white"
@@ -49,6 +52,11 @@ export default function TimelineCard({
         <MapPin size={11} />
         <span className="line-clamp-1">{getLocationLabel(item)}</span>
       </div>
+      {Icon && (
+        <div className="absolute right-2 top-2 text-zinc-400">
+          <Icon size={14} strokeWidth={1.8} />
+        </div>
+      )}
     </button>
   );
 }

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { X } from "lucide-react";
 import {
   getCompanyLabel,
@@ -20,8 +20,21 @@ export default function CareerGraphDrawer({
   onClose,
   topOffset = 182,
 }) {
+  const scrollRef = useRef(null);
+
+  // reset scroll uniquement au changement d'XP sélectionnée
   useEffect(() => {
-    if (!isOpen) return undefined;
+    if (!isOpen || !item?.id || !scrollRef.current) return;
+
+    scrollRef.current.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [isOpen, item?.id]);
+
+  // listener Escape indépendant
+  useEffect(() => {
+    if (!isOpen) return;
 
     const onKeyDown = (event) => {
       if (event.key === "Escape") onClose();
@@ -80,7 +93,10 @@ export default function CareerGraphDrawer({
           </div>
         </div>
 
-        <div className="min-h-0 flex-1 overflow-y-auto [scrollbar-gutter:stable] px-5 py-5">
+        <div
+          ref={scrollRef}
+          className="min-h-0 flex-1 overflow-y-auto [scrollbar-gutter:stable] px-5 py-5"
+        >
           {item ? (
             <div className="space-y-5">
               <section>

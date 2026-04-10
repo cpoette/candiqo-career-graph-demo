@@ -38,8 +38,8 @@ export default function TimelineAxis({
               x2={x}
               y1={SPEC.topPadding}
               y2={totalHeight - SPEC.bottomPadding}
-              stroke="#c4b5fd"
-              strokeWidth={3}
+              stroke="#cdcdcd"
+              strokeWidth={2}
               opacity={0.9}
               strokeLinecap="round"
             />
