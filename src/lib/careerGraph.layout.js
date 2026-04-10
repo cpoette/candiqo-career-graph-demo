@@ -77,6 +77,40 @@ export function getEndYear(item) {
   );
 }
 
+function getCurrentYear() {
+  return new Date().getFullYear();
+}
+
+function getStepXpRange(step) {
+  const xp = step?.xp;
+  const start = xp?.startYear ?? 0;
+  const end =
+    xp?.endYear ?? (xp?.identity?.is_current ? getCurrentYear() : start);
+
+  return {
+    start: Math.min(start, end),
+    end: Math.max(start, end),
+  };
+}
+
+function isGapCoveredByParallelXp(fromStep, toStep, parallelSteps = []) {
+  const fromRange = getStepXpRange(fromStep); // plus ancien
+  const toRange = getStepXpRange(toStep); // plus récent
+
+  // trou entre la fin de l'ancien et le début du récent
+  const gapStart = fromRange.end;
+  const gapEnd = toRange.start;
+
+  if (gapEnd <= gapStart) return true; // pas de trou réel
+
+  return parallelSteps.some((step) => {
+    const p = getStepXpRange(step);
+
+    // l'XP parallèle couvre tout ou partie significative du trou
+    return p.start <= gapEnd && p.end >= gapStart;
+  });
+}
+
 export function getSecondaryCardMetrics(lane) {
   const axisX = SPEC.timelineX + getLaneOffsetX(lane) + SPEC.cardWidth / 2;
   const width = SPEC.cardWidth - 56;
@@ -644,9 +678,15 @@ export function computeTransitionSignals(fromXp, toXp) {
   };
 }
 
-export function computeTransitionType(fromXp, toXp) {
+export function computeTransitionType(fromXp, toXp, opts = {}) {
+  const { gapCoveredByParallel = false } = opts;
+
   if (!fromXp || !toXp) {
-    return { type: "normal", intensity: 0, debug: {} };
+    return {
+      type: "normal",
+      intensity: 0,
+      debug: {},
+    };
   }
 
   const leadershipDelta = getLeadershipScore(toXp) - getLeadershipScore(fromXp);
@@ -669,7 +709,8 @@ export function computeTransitionType(fromXp, toXp) {
     positiveManagerial * 0.25;
 
   // 1. BREAK
-  if (gapYears >= 2) {
+  // uniquement si le trou n'est PAS couvert par une XP parallèle
+  if (gapYears >= 2 && !gapCoveredByParallel) {
     return {
       type: "break",
       intensity: Math.min(1, 0.6 + gapYears * 0.1),
@@ -678,11 +719,12 @@ export function computeTransitionType(fromXp, toXp) {
         domainOverlap,
         roleShiftScore,
         sameCompany,
+        gapCoveredByParallel,
       },
     };
   }
 
-  // 2. RISE fort en continuité
+  // 2. RISE en continuité
   if (roleShiftScore >= 0.2 && (domainOverlap >= 0.4 || sameCompany)) {
     return {
       type: "rise",
@@ -692,11 +734,12 @@ export function computeTransitionType(fromXp, toXp) {
         domainOverlap,
         roleShiftScore,
         sameCompany,
+        gapCoveredByParallel,
       },
     };
   }
 
-  // 3. PIVOT seulement si recouvrement faible
+  // 3. PIVOT seulement si faible recouvrement
   if (domainOverlap < 0.28 && roleShiftScore >= 0.14 && !sameCompany) {
     return {
       type: "pivot",
@@ -706,11 +749,11 @@ export function computeTransitionType(fromXp, toXp) {
         domainOverlap,
         roleShiftScore,
         sameCompany,
+        gapCoveredByParallel,
       },
     };
   }
 
-  // 4. Normal
   return {
     type: "normal",
     intensity: 0.2,
@@ -719,30 +762,27 @@ export function computeTransitionType(fromXp, toXp) {
       domainOverlap,
       roleShiftScore,
       sameCompany,
+      gapCoveredByParallel,
     },
   };
 }
 
 export function buildTrajectoryTransitions(timeline) {
-  const xpSteps = timeline.steps
-    .filter((s) => s.type === "xp" && Number.isFinite(s.anchorY))
-    .sort((a, b) => a.y - b.y);
+  const xpSteps = timeline.steps.filter((step) => step.type === "xp");
+
+  // trajectoire principale uniquement
+  const mainSteps = xpSteps
+    .filter((step) => (step.lane || 0) === 0)
+    .sort((a, b) => a.y - b.y); // top -> bottom (récent -> ancien)
+
+  // XP parallèles pour couvrir les "gaps"
+  const parallelSteps = xpSteps.filter((step) => (step.lane || 0) > 0);
 
   const transitions = [];
 
-  console.table(
-    xpSteps.map((s) => ({
-      id: s?.xp?.id,
-      lane: s?.lane,
-      y: s?.y,
-      anchorY: s?.anchorY,
-      title: s?.xp?.identity?.job_title,
-    })),
-  );
-
-  for (let i = 0; i < xpSteps.length - 1; i++) {
-    const upper = xpSteps[i];
-    const lower = xpSteps[i + 1];
+  for (let i = 0; i < mainSteps.length - 1; i += 1) {
+    const upper = mainSteps[i]; // plus récent à l'écran
+    const lower = mainSteps[i + 1]; // plus ancien à l'écran
 
     if (
       !upper?.xp ||
@@ -753,15 +793,29 @@ export function buildTrajectoryTransitions(timeline) {
       continue;
     }
 
-    const { type, intensity } = computeTransitionType(lower.xp, upper.xp);
+    // lecture réelle de trajectoire : ancien -> récent
+    const gapCoveredByParallel = isGapCoveredByParallelXp(
+      lower,
+      upper,
+      parallelSteps,
+    );
+
+    const { type, intensity, debug } = computeTransitionType(
+      lower.xp,
+      upper.xp,
+      { gapCoveredByParallel },
+    );
 
     transitions.push({
       fromXpId: lower.xp.id,
       toXpId: upper.xp.id,
+      fromLane: lower.lane || 0,
+      toLane: upper.lane || 0,
+      lane: 0,
       type,
       intensity,
-      lane: upper.lane || 0,
-      x: SPEC.timelineX + getLaneOffsetX(upper.lane || 0),
+      debug,
+      x: SPEC.timelineX + getLaneOffsetX(0),
       y1: upper.anchorY,
       y2: lower.anchorY,
       midY: upper.anchorY + (lower.anchorY - upper.anchorY) / 2,
