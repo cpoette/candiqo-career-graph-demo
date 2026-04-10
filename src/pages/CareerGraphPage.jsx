@@ -21,8 +21,8 @@ export default function CareerGraphPage({
         <div className="border border-y-0 border-zinc-200 bg-white shadow-sm">
           <CareerGraphHeader
             eyebrow="Career Graph"
-            title="Enchaînement Année / XP + lane parallèle + FD"
-            description="Prototype minimal..."
+            title="Transformer un CV en trajectoire lisible"
+            description="Cette vue met en évidence le fil principal du parcours, les engagements parallèles et les domaines fonctionnels qui structurent l’expérience. L’objectif : rendre la trajectoire lisible en un coup d’œil."
             selectedCvId={selectedCvId}
             setSelectedCvId={setSelectedCvId}
             cvSamples={cvSamples}
