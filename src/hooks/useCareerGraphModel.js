@@ -18,6 +18,14 @@ import {
   computeAlignedDomainPositions,
 } from "@/lib/careerGraph.layout";
 
+import {
+  CAREER_GRAPH_MIN_HEIGHT,
+  FD_STACK_BOTTOM_PADDING,
+  FD_STACK_TOP_PADDING,
+  DOMAIN_GAP,
+  DOMAIN_HEIGHT,
+} from "@/lib/careerGraph.constants";
+
 export default function useCareerGraphModel(data = {}) {
   const [hoveredXpId, setHoveredXpId] = useState(null);
   const [hoveredDomainId, setHoveredDomainId] = useState(null);
@@ -83,11 +91,14 @@ export default function useCareerGraphModel(data = {}) {
   // CANVAS
   // =========================
 
+  const domainX =
+    timeline.laneCount > 1 ? DOMAIN_X_OFFSET - 40 : DOMAIN_X_OFFSET;
+
   const canvasWidth =
     SPEC.cardX +
     SPEC.cardWidth +
     (timeline.laneCount - 1) * (LANE_WIDTH + GAP) +
-    DOMAIN_X_OFFSET +
+    domainX +
     DOMAIN_WIDTH +
     80;
 
@@ -95,7 +106,7 @@ export default function useCareerGraphModel(data = {}) {
     SPEC.cardX +
     SPEC.cardWidth +
     (timeline.laneCount - 1) * (LANE_WIDTH + GAP) +
-    DOMAIN_X_OFFSET;
+    domainX;
 
   // =========================
   // BASE DOMAIN POSITIONS
@@ -118,6 +129,25 @@ export default function useCareerGraphModel(data = {}) {
     [domains, domainBaseX],
   );
 
+  const minHeightFromDomains = useMemo(() => {
+    const count = domains.length || 0;
+    if (!count) return 0;
+
+    return (
+      FD_STACK_TOP_PADDING +
+      FD_STACK_BOTTOM_PADDING +
+      Math.max(0, count - 1) * DOMAIN_GAP +
+      DOMAIN_HEIGHT
+    );
+  }, [domains]);
+
+  const sceneHeight = useMemo(() => {
+    return Math.max(
+      timeline.totalHeight,
+      minHeightFromDomains,
+      CAREER_GRAPH_MIN_HEIGHT,
+    );
+  }, [timeline.totalHeight, minHeightFromDomains]);
   // =========================
   // ACTIVE DOMAINS
   // =========================
@@ -181,6 +211,15 @@ export default function useCareerGraphModel(data = {}) {
   }, [alignedDomainPositions]);
 
   // =========================
+  // RESET UI ON DATA CHANGE
+  // =========================
+  useEffect(() => {
+    setHoveredXpId(null);
+    setHoveredDomainId(null);
+    setSelectedXpId(null);
+  }, [data]);
+
+  // =========================
   // ACTIONS
   // =========================
 
@@ -199,6 +238,7 @@ export default function useCareerGraphModel(data = {}) {
     setHoveredDomainId,
     selectedXpId,
     setSelectedXpId,
+    sceneHeight,
 
     items,
     timeline,

@@ -35,6 +35,7 @@ export default function CareerGraphPage({
               sceneProps={{
                 timeline: model.timeline,
                 canvasWidth: model.canvasWidth,
+                sceneHeight: model.sceneHeight,
                 domains: model.domains,
                 selectedItem: model.selectedItem,
                 selectedXpId: model.selectedXpId,

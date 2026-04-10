@@ -30,7 +30,6 @@ export function getDateRangeLabel(item) {
 export function getSignalItems(item) {
   const posture = item?.signals?.posture || {};
   const level = item?.signals?.level || {};
-  const dynamics = item?.signals?.dynamics || {};
 
   return [
     {
@@ -68,12 +67,6 @@ export function getSignalItems(item) {
       label: "Exécution",
       value: Math.round(clamp01(level.execution_scope || 0) * 100),
       group: "level",
-    },
-    {
-      key: "recent_relevance",
-      label: "Récence",
-      value: Math.round(clamp01(dynamics.recent_relevance || 0) * 100),
-      group: "dynamics",
     },
   ];
 }

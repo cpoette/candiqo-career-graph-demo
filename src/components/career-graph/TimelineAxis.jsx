@@ -27,6 +27,8 @@ export default function TimelineAxis({
 
       {!hideLaneLines &&
         Array.from({ length: laneCount }).map((_, lane) => {
+          if (lane !== 0) return null;
+
           const x = SPEC.timelineX + getLaneOffsetX(lane);
 
           return (
@@ -36,10 +38,10 @@ export default function TimelineAxis({
               x2={x}
               y1={SPEC.topPadding}
               y2={totalHeight - SPEC.bottomPadding}
-              stroke="#e4e4e7"
-              strokeWidth="2"
+              stroke="#c4b5fd"
+              strokeWidth={3}
+              opacity={0.9}
               strokeLinecap="round"
-              opacity={0.7}
             />
           );
         })}
@@ -47,6 +49,7 @@ export default function TimelineAxis({
       {trajectoryTransitions
         .filter(
           (t) =>
+            t.lane === 0 &&
             Number.isFinite(t?.x) &&
             Number.isFinite(t?.y1) &&
             Number.isFinite(t?.y2) &&
@@ -122,16 +125,18 @@ export default function TimelineAxis({
       ))}
 
       {!hideDots &&
-        xpAnchors.map((anchor) => (
-          <circle
-            key={anchor.id}
-            cx={SPEC.timelineX + getLaneOffsetX(anchor.lane)}
-            cy={anchor.y}
-            r={anchor.active ? anchor.r + 1.25 : anchor.r}
-            fill={anchor.active ? "#7c3aed" : "#18181b"}
-            opacity={anchor.active ? 1 : 0.92}
-          />
-        ))}
+        xpAnchors
+          .filter((anchor) => anchor.lane === 0)
+          .map((anchor) => (
+            <circle
+              key={anchor.id}
+              cx={SPEC.timelineX + getLaneOffsetX(anchor.lane)}
+              cy={anchor.y}
+              r={anchor.active ? anchor.r + 1.25 : anchor.r}
+              fill={anchor.active ? "#7c3aed" : "#18181b"}
+              opacity={anchor.active ? 1 : 0.92}
+            />
+          ))}
     </svg>
   );
 }

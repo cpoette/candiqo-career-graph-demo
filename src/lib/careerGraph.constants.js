@@ -1,5 +1,5 @@
 export const SPEC = {
-  topPadding: 32,
+  topPadding: 64,
   bottomPadding: 40,
   timelineX: 32,
   yearWidth: 320,
@@ -11,6 +11,10 @@ export const SPEC = {
   gapPerMissingYear: 0,
   maxExtraGap: 28,
 };
+
+export const CAREER_GRAPH_MIN_HEIGHT = 100;
+export const FD_STACK_TOP_PADDING = 80;
+export const FD_STACK_BOTTOM_PADDING = 80;
 
 export const LANE_WIDTH = 360;
 export const GAP = 64;

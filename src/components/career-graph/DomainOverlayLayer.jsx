@@ -11,7 +11,7 @@ export default function DomainOverlayLayer({
   activeDomainIds,
   hoveredDomainId,
   setHoveredDomainId,
-  topOffset = 140,
+  topOffset,
 }) {
   return (
     <div

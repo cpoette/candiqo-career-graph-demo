@@ -77,83 +77,37 @@ export function getEndYear(item) {
   );
 }
 
-function getCurrentYear() {
-  return new Date().getFullYear();
-}
-
-function getXpRange(item) {
-  const start = item?.startYear ?? 0;
-  const end =
-    item?.endYear ?? (item?.identity?.is_current ? getCurrentYear() : start);
+export function getSecondaryCardMetrics(lane) {
+  const axisX = SPEC.timelineX + getLaneOffsetX(lane) + SPEC.cardWidth / 2;
+  const width = SPEC.cardWidth - 56;
+  const x = axisX - width / 2;
 
   return {
-    start: Math.min(start, end),
-    end: Math.max(start, end),
+    axisX,
+    width,
+    x,
+    rightX: x + width,
   };
 }
 
-function overlapsXp(itemA, itemB) {
-  const a = getXpRange(itemA);
-  const b = getXpRange(itemB);
+export function getXpVisualLinkAnchor(step) {
+  if (!step || step.type !== "xp") return null;
 
-  // frontière commune = continuité, pas overlap strict
-  return !(a.end <= b.start || a.start >= b.end);
-}
+  // lane principale
+  if ((step.lane || 0) === 0) {
+    const x = SPEC.cardX + getLaneOffsetX(step.lane || 0) + SPEC.cardWidth;
+    const y = step.y + SPEC.cardHeight / 2;
 
-function getProjectedSecondaryCardY(item, mainXpSteps, spec) {
-  if (!mainXpSteps.length) return spec.topPadding;
-
-  const overlaps = mainXpSteps.filter((step) => overlapsXp(item, step.xp));
-
-  // 1. chevauche une seule XP principale
-  if (overlaps.length === 1) {
-    return overlaps[0].anchorY - spec.cardHeight / 2;
+    return { x, y };
   }
 
-  // 2. chevauche plusieurs XP principales => centre du bloc
-  if (overlaps.length > 1) {
-    const avgAnchorY =
-      overlaps.reduce((sum, step) => sum + step.anchorY, 0) / overlaps.length;
+  // lane secondaire
+  const metrics = getSecondaryCardMetrics(step.lane || 1);
 
-    return avgAnchorY - spec.cardHeight / 2;
-  }
-
-  const itemRange = getXpRange(item);
-
-  // main steps supposés triés top -> bottom (récent -> ancien)
-  for (let i = 0; i < mainXpSteps.length - 1; i += 1) {
-    const upper = mainXpSteps[i];
-    const lower = mainXpSteps[i + 1];
-
-    const upperRange = getXpRange(upper.xp);
-    const lowerRange = getXpRange(lower.xp);
-
-    // 3. s'insère entre deux XP principales
-    if (
-      itemRange.end <= upperRange.start &&
-      itemRange.start >= lowerRange.end
-    ) {
-      const midAnchorY = (upper.anchorY + lower.anchorY) / 2;
-      return midAnchorY - spec.cardHeight / 2;
-    }
-  }
-
-  const topMain = mainXpSteps[0];
-  const bottomMain = mainXpSteps[mainXpSteps.length - 1];
-  const topRange = getXpRange(topMain.xp);
-  const bottomRange = getXpRange(bottomMain.xp);
-
-  // 4. plus récent que tout le reste
-  if (itemRange.start >= topRange.start) {
-    return topMain.y;
-  }
-
-  // 5. plus ancien que tout le reste
-  if (itemRange.end <= bottomRange.end) {
-    return bottomMain.y + spec.cardHeight + spec.baseGap;
-  }
-
-  return spec.topPadding;
+  return {
+    x: metrics.rightX,
+    y: step.y + SPEC.cardHeight / 2,
+  };
 }
 
 function resolveProjectedLaneCollisions(steps, spec) {
@@ -167,20 +121,26 @@ function resolveProjectedLaneCollisions(steps, spec) {
     const minY = prev.y + spec.cardHeight + spec.baseGap;
 
     if (curr.y < minY) {
+      const delta = minY - curr.y;
       curr.y = minY;
       curr.anchorY = curr.y + spec.cardHeight / 2;
+      curr.rangeTopY += delta;
+      curr.rangeBottomY += delta;
     }
   }
 
-  // léger pull-back vers la position projetée d'origine
   for (let i = sorted.length - 2; i >= 0; i -= 1) {
     const curr = sorted[i];
     const next = sorted[i + 1];
     const maxY = next.y - spec.cardHeight - spec.baseGap;
 
     if (curr.baseY != null && curr.y > curr.baseY) {
-      curr.y = Math.max(curr.baseY, Math.min(curr.y, maxY));
+      const nextY = Math.max(curr.baseY, Math.min(curr.y, maxY));
+      const delta = nextY - curr.y;
+      curr.y = nextY;
       curr.anchorY = curr.y + spec.cardHeight / 2;
+      curr.rangeTopY += delta;
+      curr.rangeBottomY += delta;
     }
   }
 
@@ -193,6 +153,114 @@ export function normalizeTimelineItems(items) {
     startYear: getStartYear(item),
     endYear: getEndYear(item),
   }));
+}
+
+export function getXpRange(item) {
+  const currentYear = new Date().getFullYear();
+
+  const start = item?.startYear ?? 0;
+  const end =
+    item?.endYear ?? (item?.identity?.is_current ? currentYear : start);
+
+  return {
+    start: Math.min(start, end),
+    end: Math.max(start, end),
+  };
+}
+
+export function overlapsXpInclusive(itemA, itemB) {
+  const a = getXpRange(itemA);
+  const b = getXpRange(itemB);
+
+  return a.start <= b.end && a.end >= b.start;
+}
+
+export function computeSecondaryRange(mainXpSteps, secondaryXp, spec = SPEC) {
+  if (!mainXpSteps?.length) {
+    const top = spec.topPadding;
+    return {
+      topY: top,
+      bottomY: top + spec.cardHeight,
+      midY: top + spec.cardHeight / 2,
+    };
+  }
+
+  const overlaps = mainXpSteps.filter((step) =>
+    overlapsXpInclusive(secondaryXp, step.xp),
+  );
+
+  if (overlaps.length === 1) {
+    const anchorY = overlaps[0].anchorY;
+    return {
+      topY: anchorY - spec.cardHeight / 2,
+      bottomY: anchorY + spec.cardHeight / 2,
+      midY: anchorY,
+    };
+  }
+
+  if (overlaps.length > 1) {
+    const sorted = [...overlaps].sort((a, b) => a.anchorY - b.anchorY);
+    const first = sorted[0];
+    const last = sorted[sorted.length - 1];
+
+    return {
+      topY: first.anchorY - spec.cardHeight / 2,
+      bottomY: last.anchorY + spec.cardHeight / 2,
+      midY: (first.anchorY + last.anchorY) / 2,
+    };
+  }
+
+  const itemRange = getXpRange(secondaryXp);
+  const sortedMain = [...mainXpSteps].sort((a, b) => a.anchorY - b.anchorY);
+
+  for (let i = 0; i < sortedMain.length - 1; i += 1) {
+    const upper = sortedMain[i];
+    const lower = sortedMain[i + 1];
+
+    const upperRange = getXpRange(upper.xp);
+    const lowerRange = getXpRange(lower.xp);
+
+    if (
+      itemRange.end <= upperRange.start &&
+      itemRange.start >= lowerRange.end
+    ) {
+      const midY = (upper.anchorY + lower.anchorY) / 2;
+      return {
+        topY: midY - spec.cardHeight / 2,
+        bottomY: midY + spec.cardHeight / 2,
+        midY,
+      };
+    }
+  }
+
+  const topMain = sortedMain[0];
+  const bottomMain = sortedMain[sortedMain.length - 1];
+  const topRange = getXpRange(topMain.xp);
+  const bottomRange = getXpRange(bottomMain.xp);
+
+  if (itemRange.start >= topRange.start) {
+    return {
+      topY: topMain.y,
+      bottomY: topMain.y + spec.cardHeight,
+      midY: topMain.anchorY,
+    };
+  }
+
+  if (itemRange.end <= bottomRange.end) {
+    const topY = bottomMain.y + spec.cardHeight + spec.baseGap;
+    return {
+      topY,
+      bottomY: topY + spec.cardHeight,
+      midY: topY + spec.cardHeight / 2,
+    };
+  }
+
+  const fallbackTop = spec.topPadding;
+  return {
+    topY: fallbackTop,
+    bottomY: fallbackTop + spec.cardHeight,
+    midY: fallbackTop + spec.cardHeight / 2,
+  };
 }
 
 function getItemDomainMap(item) {
@@ -830,14 +898,16 @@ export function computeTimelineLayoutByLane(
     const secondaryXpSteps = rawSteps.filter((step) => step.type === "xp");
 
     const projectedXpSteps = secondaryXpSteps.map((step) => {
-      const cardY = getProjectedSecondaryCardY(step.xp, mainXpSteps, spec);
+      const range = computeSecondaryRange(mainXpSteps, step.xp, spec);
 
       return {
         ...step,
-        y: cardY,
-        baseY: cardY,
+        y: range.midY - spec.cardHeight / 2,
+        baseY: range.midY - spec.cardHeight / 2,
+        rangeTopY: range.topY,
+        rangeBottomY: range.bottomY,
         height: spec.cardHeight,
-        anchorY: cardY + spec.cardHeight / 2,
+        anchorY: range.midY,
       };
     });
 

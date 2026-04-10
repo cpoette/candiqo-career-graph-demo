@@ -9,10 +9,13 @@ import {
   DOMAIN_CENTER_Y,
   buildLinkPath,
   getLaneOffsetX,
+  getXpVisualLinkAnchor,
   buildTrajectoryTransitions,
 } from "@/lib/careerGraph.layout";
 import { MOTION } from "@/lib/careerGraph.motion";
 
+import TimelineCardSecondary from "./TimelineCardSecondary";
+import SecondaryLaneRanges from "./SecondaryLaneRanges";
 import TimelineAxis from "./TimelineAxis";
 import TimelineDate from "./TimelineDate";
 import TimelineCard from "./TimelineCard";
@@ -199,6 +202,7 @@ function createMotionNode(domain) {
 export default function CareerGraphScene({
   timeline,
   canvasWidth,
+  sceneHeight,
   domains,
   selectedItem,
   selectedXpId,
@@ -217,7 +221,7 @@ export default function CareerGraphScene({
 
   const [viewportState, setViewportState] = useState({
     top: FD_TOP_PADDING,
-    bottom: Math.max(FD_TOP_PADDING, timeline.totalHeight - FD_BOTTOM_PADDING),
+    bottom: Math.max(FD_TOP_PADDING, sceneHeight - FD_BOTTOM_PADDING),
   });
 
   const [smoothedVisibleCenter, setSmoothedVisibleCenter] = useState(null);
@@ -238,13 +242,13 @@ export default function CareerGraphScene({
       const top = clamp(
         viewportTopPx - rect.top,
         FD_TOP_PADDING,
-        Math.max(FD_TOP_PADDING, timeline.totalHeight - FD_BOTTOM_PADDING),
+        Math.max(FD_TOP_PADDING, sceneHeight - FD_BOTTOM_PADDING),
       );
 
       const bottom = clamp(
         viewportBottomPx - rect.top,
         FD_TOP_PADDING,
-        Math.max(FD_TOP_PADDING, timeline.totalHeight - FD_BOTTOM_PADDING),
+        Math.max(FD_TOP_PADDING, sceneHeight - FD_BOTTOM_PADDING),
       );
 
       setViewportState({
@@ -261,7 +265,7 @@ export default function CareerGraphScene({
       window.removeEventListener("scroll", updateViewport);
       window.removeEventListener("resize", updateViewport);
     };
-  }, [timeline.totalHeight]);
+  }, [sceneHeight]);
 
   useEffect(() => {
     let rafId = null;
@@ -431,12 +435,16 @@ export default function CareerGraphScene({
   }, [positionedDomains, frameTick]);
 
   const linkPaths = useMemo(() => {
-    const anchorMap = new Map(xpAnchors.map((anchor) => [anchor.id, anchor]));
+    const xpVisualAnchorMap = new Map(
+      timeline.steps
+        .filter((step) => step.type === "xp")
+        .map((step) => [step.xp.id, getXpVisualLinkAnchor(step)]),
+    );
 
     return liveDomains.flatMap((domain) =>
       domain.xpIds
         .map((xpId) => {
-          const anchor = anchorMap.get(xpId);
+          const anchor = xpVisualAnchorMap.get(xpId);
           if (!anchor) return null;
 
           const isActiveFromXp =
@@ -446,7 +454,7 @@ export default function CareerGraphScene({
           return {
             id: `${xpId}-${domain.id}`,
             d: buildLinkPath(
-              SPEC.cardX + getLaneOffsetX(anchor.lane) + SPEC.cardWidth,
+              anchor.x,
               anchor.y,
               domain.liveX,
               domain.liveY + DOMAIN_CENTER_Y,
@@ -456,7 +464,13 @@ export default function CareerGraphScene({
         })
         .filter(Boolean),
     );
-  }, [liveDomains, xpAnchors, activeXpId, activeDomainIds, hoveredDomainId]);
+  }, [
+    timeline.steps,
+    liveDomains,
+    activeXpId,
+    activeDomainIds,
+    hoveredDomainId,
+  ]);
 
   return (
     <div
@@ -464,11 +478,11 @@ export default function CareerGraphScene({
       className="relative"
       style={{
         width: canvasWidth,
-        height: timeline.totalHeight,
+        height: sceneHeight,
       }}
     >
       <TimelineAxis
-        totalHeight={timeline.totalHeight}
+        totalHeight={sceneHeight}
         xpAnchors={xpAnchors}
         laneCount={timeline.laneCount}
         linkPaths={linkPaths}
@@ -476,14 +490,74 @@ export default function CareerGraphScene({
         canvasWidth={canvasWidth}
       />
 
+      <SecondaryLaneRanges
+        steps={timeline.steps}
+        canvasWidth={canvasWidth}
+        totalHeight={sceneHeight}
+      />
+
+      <div className="pointer-events-none absolute left-0 py-3 z-10 w-full">
+        <div
+          className="absolute text-[11px] font-semibold uppercase tracking-[0.14em] text-zinc-400"
+          style={{
+            left: SPEC.cardX,
+            width: SPEC.cardWidth,
+            textAlign: "center",
+          }}
+        >
+          Trajectoire principale
+        </div>
+
+        {timeline.laneCount > 1 ? (
+          <div
+            className="absolute text-[11px] font-semibold uppercase tracking-[0.14em] text-zinc-400"
+            style={{
+              left: SPEC.cardX + getLaneOffsetX(1) - 40,
+              width: SPEC.cardWidth,
+              textAlign: "center",
+            }}
+          >
+            Engagements parallèles
+          </div>
+        ) : null}
+
+        <div
+          className="absolute text-[11px] font-semibold uppercase tracking-[0.14em] text-zinc-400"
+          style={{
+            left: canvasWidth - DOMAIN_WIDTH - DOMAIN_RIGHT_PADDING,
+            width: DOMAIN_WIDTH,
+            textAlign: "center",
+          }}
+        >
+          Domaines fonctionnels
+        </div>
+      </div>
+
       {timeline.steps.map((step, index) => {
         if (step.type === "date") {
+          if (step.lane > 0) return null;
+
           return (
             <TimelineDate
               key={`${step.lane}-${step.value}-${index}`}
               value={step.value}
               y={step.y}
               lane={step.lane || 0}
+            />
+          );
+        }
+
+        if (step.lane > 0) {
+          return (
+            <TimelineCardSecondary
+              key={step.xp.id}
+              item={step.xp}
+              y={step.y}
+              lane={step.lane || 1}
+              isActive={activeXpId === step.xp.id}
+              onMouseEnter={() => setHoveredXpId(step.xp.id)}
+              onMouseLeave={() => setHoveredXpId(null)}
+              onClick={() => setSelectedXpId(step.xp.id)}
             />
           );
         }

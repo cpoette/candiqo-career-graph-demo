@@ -85,7 +85,7 @@ export default function CareerGraphDrawer({
             <div className="space-y-5">
               <section>
                 <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500">
-                  Domaines
+                  Domaines fonctionnels
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {functionalDomains.map((domain, index) => (
@@ -106,7 +106,7 @@ export default function CareerGraphDrawer({
 
               <section>
                 <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500">
-                  Contexte
+                  Secteur
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {contextDomains.length ? (
@@ -159,18 +159,11 @@ export default function CareerGraphDrawer({
 
               <section>
                 <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500">
-                  Excerpt
+                  Contenu Expérience (excerpts)
                 </div>
                 <div className="space-y-2 text-[12px] leading-5 text-zinc-600">
                   {excerptLines.length ? (
-                    excerptLines.map((line, idx) => (
-                      <div
-                        key={idx}
-                        className="border border-zinc-200 bg-zinc-50 px-3 py-2"
-                      >
-                        {line}
-                      </div>
-                    ))
+                    excerptLines.map((line, idx) => <div key={idx}>{line}</div>)
                   ) : (
                     <div className="text-zinc-400">
                       Aucun excerpt disponible.
@@ -205,8 +198,14 @@ export default function CareerGraphDrawer({
                         label="Taille / segment"
                         value={company.sizeSegment}
                       />
-                      <DrawerInfoBox label="Scope org" value={company.scope} />
-                      <DrawerInfoBox label="HQ" value={company.hqCity} />
+                      <DrawerInfoBox
+                        label="Type organisation"
+                        value={company.scope}
+                      />
+                      <DrawerInfoBox
+                        label="Siège Social"
+                        value={company.hqCity}
+                      />
                       <DrawerInfoBox
                         label="Établissement matché"
                         value={company.matchedCity}
