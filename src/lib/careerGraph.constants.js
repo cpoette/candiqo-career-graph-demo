@@ -1,5 +1,5 @@
 export const SPEC = {
-  topPadding: 64,
+  topPadding: 32,
   bottomPadding: 40,
   timelineX: 32,
   yearWidth: 320,
@@ -21,6 +21,6 @@ export const GAP = 64;
 export const DOMAIN_WIDTH = 220;
 export const DOMAIN_HEIGHT = 40;
 export const DOMAIN_CENTER_Y = DOMAIN_HEIGHT / 2;
-export const DOMAIN_X_OFFSET = 180;
-export const DOMAIN_TOP = 140;
+export const DOMAIN_X_OFFSET = 140;
+export const DOMAIN_TOP = 120;
 export const DOMAIN_GAP = 86;

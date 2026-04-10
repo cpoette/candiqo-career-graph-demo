@@ -5,7 +5,8 @@ import useCareerGraphModel from "@/hooks/useCareerGraphModel";
 
 const TOPBAR_HEIGHT = 48;
 const HEADER_HEIGHT = 130;
-const DRAWER_TOP_OFFSET = TOPBAR_HEIGHT + HEADER_HEIGHT; // + page top padding
+const PAGE_TOP_PADDING = 24;
+const DRAWER_TOP_OFFSET = TOPBAR_HEIGHT + HEADER_HEIGHT + PAGE_TOP_PADDING; // + page top padding
 
 export default function CareerGraphPage({
   data = {},
