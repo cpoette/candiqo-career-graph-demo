@@ -10,6 +10,8 @@ export default function TimelineAxis({
   canvasWidth,
   hideLaneLines = false,
   hideDots = false,
+  onTransitionEnter,
+  onTransitionLeave,
 }) {
   return (
     <svg
@@ -50,6 +52,8 @@ export default function TimelineAxis({
         .filter(
           (t) =>
             t.lane === 0 &&
+            t.fromLane === 0 &&
+            t.toLane === 0 &&
             Number.isFinite(t?.x) &&
             Number.isFinite(t?.y1) &&
             Number.isFinite(t?.y2) &&
@@ -79,18 +83,21 @@ export default function TimelineAxis({
           const ICON_SIZE = 14;
 
           return (
-            <g key={`${t.fromXpId}-${t.toXpId}`}>
-              {/* Cartouche centré sur la timeline */}
+            <g
+              key={`${t.fromXpId}-${t.toXpId}`}
+              className="pointer-events-auto cursor-pointer"
+              onMouseEnter={() => onTransitionEnter?.(t)}
+              onMouseLeave={() => onTransitionLeave?.()}
+            >
               <circle
                 cx={iconX}
                 cy={iconY}
                 r={CARTOUCHE_SIZE / 2}
                 fill="white"
-                stroke="#e5e5e8"
+                stroke="#e4e4e7"
                 strokeWidth="1"
               />
 
-              {/* Icône */}
               <foreignObject
                 x={iconX - ICON_SIZE / 2}
                 y={iconY - ICON_SIZE / 2}

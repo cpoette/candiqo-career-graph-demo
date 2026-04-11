@@ -122,7 +122,7 @@ export default function CareerGraphDrawer({
 
               <section>
                 <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-zinc-500">
-                  Secteur
+                  Secteur d'activité
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {contextDomains.length ? (

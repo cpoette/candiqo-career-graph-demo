@@ -27,7 +27,7 @@ export default function CareerGraphHeader({
 
         {/* SELECT CV */}
         <div className="flex items-center gap-2">
-          <span className="text-xs text-zinc-500">Dataset</span>
+          <span className="text-xs text-zinc-500">CV :</span>
 
           <select
             value={selectedCvId || ""}

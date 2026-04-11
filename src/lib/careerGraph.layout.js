@@ -763,6 +763,9 @@ export function computeTransitionType(fromXp, toXp, opts = {}) {
       roleShiftScore,
       sameCompany,
       gapCoveredByParallel,
+      leadershipDelta,
+      strategicDelta,
+      managerialDelta,
     },
   };
 }
@@ -806,6 +809,13 @@ export function buildTrajectoryTransitions(timeline) {
       { gapCoveredByParallel },
     );
 
+    const insight = buildTransitionInsight({
+      type,
+      debug,
+      fromXp: lower.xp,
+      toXp: upper.xp,
+    });
+
     transitions.push({
       fromXpId: lower.xp.id,
       toXpId: upper.xp.id,
@@ -815,6 +825,7 @@ export function buildTrajectoryTransitions(timeline) {
       type,
       intensity,
       debug,
+      insight,
       x: SPEC.timelineX + getLaneOffsetX(0),
       y1: upper.anchorY,
       y2: lower.anchorY,
@@ -823,6 +834,112 @@ export function buildTrajectoryTransitions(timeline) {
   }
 
   return transitions;
+}
+
+function formatJobTitle(title) {
+  if (!title) return "";
+
+  const clean = title.replace(/\s+/g, " ").trim();
+
+  if (clean.length <= 40) return clean;
+
+  return clean.slice(0, 37) + "…";
+}
+
+export function buildTransitionInsight({ type, debug, fromXp, toXp }) {
+  const domainOverlap = debug?.domainOverlap ?? 1;
+  const sameCompany = Boolean(debug?.sameCompany);
+  const gapYears = debug?.gapYears || 0;
+
+  const leadershipDelta = debug?.leadershipDelta || 0;
+  const strategicDelta = debug?.strategicDelta || 0;
+  const managerialDelta = debug?.managerialDelta || 0;
+
+  const fromTitle = formatJobTitle(fromXp?.identity?.job_title);
+  const toTitle = formatJobTitle(toXp?.identity?.job_title);
+  const headline =
+    fromTitle && toTitle ? `De “${fromTitle}” à “${toTitle}”` : null;
+
+  if (type === "rise") {
+    if (sameCompany && managerialDelta > 0.2) {
+      return {
+        headline,
+        title: "Progression interne",
+        body: "Évolution vers un rôle avec davantage d’encadrement dans un cadre métier cohérent.",
+        meta: "Même environnement, scope managérial en hausse",
+      };
+    }
+
+    if (strategicDelta > leadershipDelta && strategicDelta > 0.2) {
+      return {
+        headline,
+        title: "Montée en portée stratégique",
+        body: "Le parcours évolue vers un rôle plus structurant dans le même fil de trajectoire.",
+        meta: "Portée stratégique en hausse, continuité métier forte",
+      };
+    }
+
+    if (managerialDelta > 0.2) {
+      return {
+        headline,
+        title: "Montée en responsabilité",
+        body: "Progression vers un rôle avec davantage d’encadrement et de coordination.",
+        meta: "Scope managérial en hausse",
+      };
+    }
+
+    return {
+      headline,
+      title: "Progression",
+      body: "Évolution cohérente dans la trajectoire principale avec un rôle plus structurant.",
+      meta: "Continuité métier, responsabilité en hausse",
+    };
+  }
+
+  if (type === "pivot") {
+    if (sameCompany) {
+      return {
+        headline,
+        title: "Repositionnement interne",
+        body: "Le parcours change de positionnement au sein du même environnement.",
+        meta: "Évolution de rôle avec continuité d’entreprise",
+      };
+    }
+
+    if (domainOverlap < 0.2) {
+      return {
+        headline,
+        title: "Changement de direction",
+        body: "La trajectoire bascule vers un autre terrain fonctionnel.",
+        meta: "Recouvrement métier faible",
+      };
+    }
+
+    return {
+      headline,
+      title: "Repositionnement",
+      body: "Le parcours évolue vers un nouveau positionnement sans rupture complète de continuité.",
+      meta: "Changement de rôle perceptible",
+    };
+  }
+
+  if (type === "break") {
+    return {
+      headline,
+      title: "Rupture de trajectoire",
+      body: "Une discontinuité temporelle visible sépare ces deux étapes du parcours.",
+      meta: gapYears
+        ? `Trou estimé : ${gapYears} an${gapYears > 1 ? "s" : ""}`
+        : "",
+    };
+  }
+
+  return {
+    headline,
+    title: "Continuité",
+    body: "Transition fluide dans la trajectoire.",
+    meta: "",
+  };
 }
 
 export function getFunctionalDomainMap(item) {

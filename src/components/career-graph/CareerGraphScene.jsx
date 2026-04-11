@@ -218,6 +218,7 @@ export default function CareerGraphScene({
   const motionNodesRef = useRef(new Map());
   const rafTickRef = useRef(null);
   const [frameTick, setFrameTick] = useState(0);
+  const [hoveredTransition, setHoveredTransition] = useState(null);
 
   const [viewportState, setViewportState] = useState({
     top: FD_TOP_PADDING,
@@ -230,6 +231,26 @@ export default function CareerGraphScene({
     () => buildTrajectoryTransitions(timeline),
     [timeline],
   );
+
+  const transitionTooltip = useMemo(() => {
+    if (!hoveredTransition) return null;
+
+    const TOOLTIP_WIDTH = 240;
+    const x = clamp(
+      hoveredTransition.x - TOOLTIP_WIDTH / 2,
+      48,
+      canvasWidth - TOOLTIP_WIDTH + 16,
+    );
+
+    const y = Math.max(12, hoveredTransition.midY - 64);
+
+    return {
+      ...hoveredTransition,
+      left: x,
+      top: y,
+      width: TOOLTIP_WIDTH,
+    };
+  }, [hoveredTransition, canvasWidth]);
 
   useEffect(() => {
     function updateViewport() {
@@ -488,7 +509,46 @@ export default function CareerGraphScene({
         linkPaths={linkPaths}
         trajectoryTransitions={trajectoryTransitions}
         canvasWidth={canvasWidth}
+        onTransitionEnter={setHoveredTransition}
+        onTransitionLeave={() => setHoveredTransition(null)}
       />
+
+      {transitionTooltip ? (
+        <div
+          className="pointer-events-none absolute z-30"
+          style={{
+            left: transitionTooltip.left,
+            top: transitionTooltip.top,
+            width: transitionTooltip.width,
+          }}
+        >
+          <div className="rounded-xl border border-zinc-200 bg-white/96 px-3 py-2 shadow-lg backdrop-blur-sm">
+            {/* HEADLINE */}
+            {transitionTooltip.insight?.headline && (
+              <div className="text-[11px] font-medium text-zinc-500">
+                {transitionTooltip.insight.headline}
+              </div>
+            )}
+
+            {/* TITLE */}
+            <div className="mt-1 text-[12px] font-semibold text-zinc-900">
+              {transitionTooltip.insight?.title}
+            </div>
+
+            {/* BODY */}
+            <div className="mt-1 text-[11px] leading-4 text-zinc-600">
+              {transitionTooltip.insight?.body}
+            </div>
+
+            {/* META */}
+            {transitionTooltip.insight?.meta && (
+              <div className="mt-2 text-[10px] uppercase tracking-[0.08em] text-zinc-400">
+                {transitionTooltip.insight.meta}
+              </div>
+            )}
+          </div>
+        </div>
+      ) : null}
 
       <SecondaryLaneRanges
         steps={timeline.steps}
