@@ -235,7 +235,7 @@ export default function CareerGraphScene({
   const transitionTooltip = useMemo(() => {
     if (!hoveredTransition) return null;
 
-    const TOOLTIP_WIDTH = 300;
+    const TOOLTIP_WIDTH = 320;
     const x = clamp(
       hoveredTransition.x - TOOLTIP_WIDTH / 2,
       48,
@@ -531,18 +531,18 @@ export default function CareerGraphScene({
             )}
 
             {/* TITLE */}
-            <div className="mt-1 text-[12px] font-semibold text-zinc-900">
+            <div className="mt-1 text-[13px] font-semibold text-zinc-900">
               {transitionTooltip.insight?.title}
             </div>
 
             {/* BODY */}
-            <div className="mt-1 text-[11px] leading-4 text-zinc-600">
+            <div className="mt-1 text-[12px] leading-5 text-zinc-600">
               {transitionTooltip.insight?.body}
             </div>
 
             {/* META */}
             {transitionTooltip.insight?.meta && (
-              <div className="mt-2 text-[10px] uppercase tracking-[0.08em] text-zinc-400">
+              <div className="mt-2 text-[11px]  text-zinc-400">
                 {transitionTooltip.insight.meta}
               </div>
             )}

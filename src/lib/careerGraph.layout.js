@@ -988,7 +988,7 @@ export function buildTransitionInsight({ type, debug, fromXp, toXp }) {
     if (negativeManagerial >= 0.2) {
       return {
         headline,
-        title: "Resserrement de scope",
+        title: "Resserrement de périmètre",
         body: "La trajectoire évolue vers un rôle avec moins d’encadrement direct.",
         meta: "Scope managérial en retrait",
       };
