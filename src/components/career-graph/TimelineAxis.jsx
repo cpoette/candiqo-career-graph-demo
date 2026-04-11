@@ -1,5 +1,5 @@
 import { SPEC, getLaneOffsetX } from "@/lib/careerGraph.layout";
-import { ArrowUpRight, GitBranch, Pause } from "lucide-react";
+import { ArrowUpRight, GitBranch, Pause, Focus } from "lucide-react";
 
 export default function TimelineAxis({
   totalHeight,
@@ -71,10 +71,13 @@ export default function TimelineAxis({
             strokeWidth = 2;
           } else if (t.type === "break") {
             Icon = Pause;
-            strokeWidth = 1.7;
+            strokeWidth = 2;
           } else if (t.type === "rise") {
             Icon = ArrowUpRight;
-            strokeWidth = 1.7;
+            strokeWidth = 2;
+          } else if (t.type === "recentrage") {
+            Icon = Focus;
+            strokeWidth = 2;
           }
 
           if (!Icon) return null;

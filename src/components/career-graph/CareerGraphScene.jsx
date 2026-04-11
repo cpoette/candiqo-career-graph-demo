@@ -235,7 +235,7 @@ export default function CareerGraphScene({
   const transitionTooltip = useMemo(() => {
     if (!hoveredTransition) return null;
 
-    const TOOLTIP_WIDTH = 240;
+    const TOOLTIP_WIDTH = 300;
     const x = clamp(
       hoveredTransition.x - TOOLTIP_WIDTH / 2,
       48,

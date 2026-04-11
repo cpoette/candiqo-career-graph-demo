@@ -577,6 +577,35 @@ export function getPrimaryDomainCode(item) {
   return item?.domains?.functional?.[0]?.code || null;
 }
 
+export function getPrimaryContextCode(item) {
+  return item?.domains?.context?.[0]?.code || null;
+}
+
+export function computeStrongSharedFunctionalSignal(fromXp, toXp) {
+  const fromDomains = fromXp?.domains?.functional || [];
+  const toDomains = toXp?.domains?.functional || [];
+
+  let strongestSharedScore = 0;
+
+  fromDomains.forEach((fromDomain) => {
+    const match = toDomains.find(
+      (toDomain) => toDomain.code === fromDomain.code,
+    );
+    if (!match) return;
+
+    const shared = Math.min(
+      clamp01(fromDomain.score || 0),
+      clamp01(match.score || 0),
+    );
+
+    if (shared > strongestSharedScore) {
+      strongestSharedScore = shared;
+    }
+  });
+
+  return strongestSharedScore;
+}
+
 export function getLeadershipScore(item) {
   return clamp01(
     item?.signals?.posture?.leadership ??
@@ -594,11 +623,14 @@ export function getManagerialScore(item) {
 }
 
 export function getGapYears(fromXp, toXp) {
-  const fromStart = getStartYear(fromXp);
-  const toEnd = getEndYear(toXp) ?? getStartYear(toXp);
+  // fromXp = plus ancien
+  // toXp   = plus récent
+  const fromEnd = getEndYear(fromXp) ?? getStartYear(fromXp);
+  const toStart = getStartYear(toXp);
 
-  if (fromStart == null || toEnd == null) return 0;
-  return Math.max(0, fromStart - toEnd);
+  if (fromEnd == null || toStart == null) return 0;
+
+  return Math.max(0, toStart - fromEnd);
 }
 
 export function computeTransitionSignals(fromXp, toXp) {
@@ -613,6 +645,9 @@ export function computeTransitionSignals(fromXp, toXp) {
         leadershipDelta: 0,
         strategicDelta: 0,
         managerialDelta: 0,
+        leadershipGain: 0,
+        strategicGain: 0,
+        managerialGain: 0,
         gapYears: 0,
       },
     };
@@ -623,31 +658,28 @@ export function computeTransitionSignals(fromXp, toXp) {
 
   const domainShift = fromDomain && toDomain && fromDomain !== toDomain ? 1 : 0;
 
-  const leadershipDelta = Math.max(
-    0,
-    getLeadershipScore(toXp) - getLeadershipScore(fromXp),
-  );
+  // deltas bruts
+  const leadershipDelta = getLeadershipScore(toXp) - getLeadershipScore(fromXp);
 
-  const strategicDelta = Math.max(
-    0,
-    getStrategicScore(toXp) - getStrategicScore(fromXp),
-  );
+  const strategicDelta = getStrategicScore(toXp) - getStrategicScore(fromXp);
 
-  const managerialDelta = Math.max(
-    0,
-    getManagerialScore(toXp) - getManagerialScore(fromXp),
-  );
+  const managerialDelta = getManagerialScore(toXp) - getManagerialScore(fromXp);
+
+  // gains positifs pour la logique de classification
+  const leadershipGain = Math.max(0, leadershipDelta);
+  const strategicGain = Math.max(0, strategicDelta);
+  const managerialGain = Math.max(0, managerialDelta);
 
   const gapYears = getGapYears(fromXp, toXp);
 
   const pivotScore =
     domainShift * 0.45 +
-    leadershipDelta * 0.2 +
-    strategicDelta * 0.2 +
-    managerialDelta * 0.15;
+    leadershipGain * 0.2 +
+    strategicGain * 0.2 +
+    managerialGain * 0.15;
 
   const riseScore =
-    leadershipDelta * 0.35 + strategicDelta * 0.4 + managerialDelta * 0.25;
+    leadershipGain * 0.35 + strategicGain * 0.4 + managerialGain * 0.25;
 
   let type = "normal";
   let intensity = 0.25;
@@ -673,9 +705,37 @@ export function computeTransitionSignals(fromXp, toXp) {
       leadershipDelta,
       strategicDelta,
       managerialDelta,
+      leadershipGain,
+      strategicGain,
+      managerialGain,
       gapYears,
     },
   };
+}
+
+function isSameCompany(fromXp, toXp) {
+  const fromCompany = fromXp?.company;
+  const toCompany = toXp?.company;
+
+  // 1. SIREN
+  if (fromCompany?.siren && toCompany?.siren) {
+    return fromCompany.siren === toCompany.siren;
+  }
+
+  // 2. fallback name
+  const normalize = (name) =>
+    name
+      ?.toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\(.*?\)/g, "")
+      .replace(/[^a-z0-9]/g, "")
+      .trim();
+
+  const fromName = normalize(fromXp?.identity?.company_name);
+  const toName = normalize(toXp?.identity?.company_name);
+
+  return fromName && toName && fromName === toName;
 }
 
 export function computeTransitionType(fromXp, toXp, opts = {}) {
@@ -689,15 +749,29 @@ export function computeTransitionType(fromXp, toXp, opts = {}) {
     };
   }
 
-  const leadershipDelta = getLeadershipScore(toXp) - getLeadershipScore(fromXp);
+  const sameContext =
+    getPrimaryContextCode(fromXp) === getPrimaryContextCode(toXp);
+  const strongSharedFunctionalSignal = computeStrongSharedFunctionalSignal(
+    fromXp,
+    toXp,
+  );
 
-  const strategicDelta = getStrategicScore(toXp) - getStrategicScore(fromXp);
+  const fromLeadership = getLeadershipScore(fromXp);
+  const toLeadership = getLeadershipScore(toXp);
 
-  const managerialDelta = getManagerialScore(toXp) - getManagerialScore(fromXp);
+  const fromStrategic = getStrategicScore(fromXp);
+  const toStrategic = getStrategicScore(toXp);
 
-  const gapYears = getGapYears(toXp, fromXp);
+  const fromManagerial = getManagerialScore(fromXp);
+  const toManagerial = getManagerialScore(toXp);
+
+  const leadershipDelta = toLeadership - fromLeadership;
+  const strategicDelta = toStrategic - fromStrategic;
+  const managerialDelta = toManagerial - fromManagerial;
+
+  const gapYears = getGapYears(fromXp, toXp);
   const domainOverlap = computeDomainOverlap(fromXp, toXp);
-  const sameCompany = areSameCompany(fromXp, toXp);
+  const sameCompany = isSameCompany(fromXp, toXp);
 
   const positiveLeadership = Math.max(0, leadershipDelta);
   const positiveStrategic = Math.max(0, strategicDelta);
@@ -708,65 +782,91 @@ export function computeTransitionType(fromXp, toXp, opts = {}) {
     positiveStrategic * 0.35 +
     positiveManagerial * 0.25;
 
-  // 1. BREAK
-  // uniquement si le trou n'est PAS couvert par une XP parallèle
+  const negativeLeadership = Math.max(0, -leadershipDelta);
+  const negativeStrategic = Math.max(0, -strategicDelta);
+  const negativeManagerial = Math.max(0, -managerialDelta);
+
+  const recentrageScore =
+    negativeLeadership * 0.4 +
+    negativeStrategic * 0.35 +
+    negativeManagerial * 0.25;
+
+  const debugBase = {
+    gapYears,
+    domainOverlap,
+    sameCompany,
+    sameContext,
+    strongSharedFunctionalSignal,
+    gapCoveredByParallel,
+
+    fromLeadership,
+    toLeadership,
+    leadershipDelta,
+
+    fromStrategic,
+    toStrategic,
+    strategicDelta,
+
+    fromManagerial,
+    toManagerial,
+    managerialDelta,
+
+    roleShiftScore,
+    recentrageScore,
+  };
+
+  // BREAK = vrai trou non couvert
   if (gapYears >= 2 && !gapCoveredByParallel) {
     return {
       type: "break",
       intensity: Math.min(1, 0.6 + gapYears * 0.1),
-      debug: {
-        gapYears,
-        domainOverlap,
-        roleShiftScore,
-        sameCompany,
-        gapCoveredByParallel,
-      },
+      debug: debugBase,
     };
   }
 
-  // 2. RISE en continuité
-  if (roleShiftScore >= 0.2 && (domainOverlap >= 0.4 || sameCompany)) {
+  // RISE = progression dans un socle cohérent
+  const continuitySignal =
+    sameCompany ||
+    sameContext ||
+    domainOverlap >= 0.28 ||
+    strongSharedFunctionalSignal >= 0.6;
+
+  if (roleShiftScore >= 0.2 && continuitySignal && gapYears === 0) {
     return {
       type: "rise",
       intensity: Math.min(1, roleShiftScore),
-      debug: {
-        gapYears,
-        domainOverlap,
-        roleShiftScore,
-        sameCompany,
-        gapCoveredByParallel,
-      },
+      debug: debugBase,
     };
   }
 
-  // 3. PIVOT seulement si faible recouvrement
-  if (domainOverlap < 0.28 && roleShiftScore >= 0.14 && !sameCompany) {
+  // RECENTRAGE = mouvement vers un socle plus cohérent
+  if (recentrageScore >= 0.2 && continuitySignal && gapYears === 0) {
+    return {
+      type: "recentrage",
+      intensity: Math.min(1, recentrageScore),
+      debug: debugBase,
+    };
+  }
+
+  // PIVOT = faible overlap + mouvement réel
+  if (
+    domainOverlap < 0.22 &&
+    !sameCompany &&
+    !sameContext &&
+    strongSharedFunctionalSignal < 0.5 &&
+    roleShiftScore >= 0.14
+  ) {
     return {
       type: "pivot",
       intensity: Math.min(1, (1 - domainOverlap) * 0.6 + roleShiftScore * 0.4),
-      debug: {
-        gapYears,
-        domainOverlap,
-        roleShiftScore,
-        sameCompany,
-        gapCoveredByParallel,
-      },
+      debug: debugBase,
     };
   }
 
   return {
     type: "normal",
     intensity: 0.2,
-    debug: {
-      gapYears,
-      domainOverlap,
-      roleShiftScore,
-      sameCompany,
-      gapCoveredByParallel,
-      leadershipDelta,
-      strategicDelta,
-      managerialDelta,
-    },
+    debug: debugBase,
   };
 }
 
@@ -848,38 +948,85 @@ function formatJobTitle(title) {
 
 export function buildTransitionInsight({ type, debug, fromXp, toXp }) {
   const domainOverlap = debug?.domainOverlap ?? 1;
-  const sameCompany = Boolean(debug?.sameCompany);
   const gapYears = debug?.gapYears || 0;
 
-  const leadershipDelta = debug?.leadershipDelta || 0;
-  const strategicDelta = debug?.strategicDelta || 0;
-  const managerialDelta = debug?.managerialDelta || 0;
+  const leadershipDelta = debug?.leadershipDelta ?? 0;
+  const strategicDelta = debug?.strategicDelta ?? 0;
+  const managerialDelta = debug?.managerialDelta ?? 0;
+
+  const sameCompany = debug?.sameCompany ?? isSameCompany(fromXp, toXp);
+
+  const negativeLeadership = Math.max(0, -(debug?.leadershipDelta ?? 0));
+  const negativeStrategic = Math.max(0, -(debug?.strategicDelta ?? 0));
+  const negativeManagerial = Math.max(0, -(debug?.managerialDelta ?? 0));
 
   const fromTitle = formatJobTitle(fromXp?.identity?.job_title);
   const toTitle = formatJobTitle(toXp?.identity?.job_title);
+
   const headline =
     fromTitle && toTitle ? `De “${fromTitle}” à “${toTitle}”` : null;
 
-  if (type === "rise") {
-    if (sameCompany && managerialDelta > 0.2) {
+  if (type === "recentrage") {
+    if (sameCompany) {
       return {
         headline,
-        title: "Progression interne",
-        body: "Évolution vers un rôle avec davantage d’encadrement dans un cadre métier cohérent.",
-        meta: "Même environnement, scope managérial en hausse",
+        title: "Recentrage interne",
+        body: "Le parcours évolue vers un rôle plus focalisé dans un environnement déjà connu.",
+        meta: "Responsabilité plus resserrée, continuité forte",
       };
     }
 
-    if (strategicDelta > leadershipDelta && strategicDelta > 0.2) {
+    if (negativeStrategic >= negativeLeadership && negativeStrategic >= 0.2) {
+      return {
+        headline,
+        title: "Recentrage opérationnel",
+        body: "Le parcours revient vers un périmètre plus concret et plus focalisé.",
+        meta: "Portée stratégique en retrait",
+      };
+    }
+
+    if (negativeManagerial >= 0.2) {
+      return {
+        headline,
+        title: "Resserrement de scope",
+        body: "La trajectoire évolue vers un rôle avec moins d’encadrement direct.",
+        meta: "Scope managérial en retrait",
+      };
+    }
+
+    return {
+      headline,
+      title: "Recentrage",
+      body: "Le parcours se recentre sur un périmètre plus ciblé tout en gardant une continuité métier.",
+      meta: "Continuité forte, scope plus resserré",
+    };
+  }
+
+  if (type === "rise") {
+    if (
+      sameCompany &&
+      (managerialDelta >= 0.2 ||
+        leadershipDelta >= 0.2 ||
+        strategicDelta >= 0.2)
+    ) {
+      return {
+        headline,
+        title: "Progression interne",
+        body: "Évolution vers un rôle plus structurant au sein du même environnement.",
+        meta: "Leadership, management ou portée stratégique en hausse",
+      };
+    }
+
+    if (strategicDelta > leadershipDelta && strategicDelta >= 0.2) {
       return {
         headline,
         title: "Montée en portée stratégique",
         body: "Le parcours évolue vers un rôle plus structurant dans le même fil de trajectoire.",
-        meta: "Portée stratégique en hausse, continuité métier forte",
+        meta: "Portée stratégique en hausse",
       };
     }
 
-    if (managerialDelta > 0.2) {
+    if (managerialDelta >= 0.2) {
       return {
         headline,
         title: "Montée en responsabilité",
@@ -891,8 +1038,8 @@ export function buildTransitionInsight({ type, debug, fromXp, toXp }) {
     return {
       headline,
       title: "Progression",
-      body: "Évolution cohérente dans la trajectoire principale avec un rôle plus structurant.",
-      meta: "Continuité métier, responsabilité en hausse",
+      body: "Évolution cohérente dans la trajectoire principale.",
+      meta: "Continuité métier",
     };
   }
 
@@ -906,7 +1053,7 @@ export function buildTransitionInsight({ type, debug, fromXp, toXp }) {
       };
     }
 
-    if (domainOverlap < 0.2) {
+    if (domainOverlap <= 0.2) {
       return {
         headline,
         title: "Changement de direction",
@@ -972,18 +1119,6 @@ export function computeDomainOverlap(fromXp, toXp) {
   });
 
   return union > 0 ? intersection / union : 0;
-}
-
-export function areSameCompany(fromXp, toXp) {
-  const fromSiren = fromXp?.company?.siren || null;
-  const toSiren = toXp?.company?.siren || null;
-
-  if (fromSiren && toSiren) return fromSiren === toSiren;
-
-  const fromName = fromXp?.identity?.company_name?.trim()?.toLowerCase();
-  const toName = toXp?.identity?.company_name?.trim()?.toLowerCase();
-
-  return Boolean(fromName && toName && fromName === toName);
 }
 
 export function computeTimelineLayoutByLane(
